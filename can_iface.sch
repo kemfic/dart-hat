@@ -53,14 +53,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 3950 5400 4100
 Wire Wire Line
-	6100 4700 6100 4950
-Wire Wire Line
 	5400 4300 5400 4450
 Wire Wire Line
 	5400 4450 6100 4450
 Connection ~ 6100 4450
-Wire Wire Line
-	6100 4450 6100 4500
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6188C8F1
@@ -341,15 +337,6 @@ Wire Wire Line
 Connection ~ 3600 5300
 Text HLabel 3600 5200 1    50   Input ~ 0
 VCC
-$Comp
-L Device:C_Small C?
-U 1 1 61883CD8
-P 6100 4600
-F 0 "C?" H 6192 4646 50  0000 L CNN
-F 1 "C_Small" H 6192 4555 50  0000 L CNN
-F 2 "" H 6100 4600 50  0001 C CNN
-F 3 "~" H 6100 4600 50  0001 C CNN
-	1    6100 4600
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	6100 4450 6100 4950
 $EndSCHEMATC

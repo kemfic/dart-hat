@@ -1,9 +1,5 @@
 todo
 --- 
- - test duplicate hierarchical sheet nets
-	- make a basic sheet
-	- try to lay it out
-
  - populate component reference ids
 
  - source parts

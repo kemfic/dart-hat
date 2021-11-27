@@ -1,0 +1,11 @@
+(fp_lib_table
+  (lib (name BMI088)(type KiCad)(uri ${KIPRJMOD}/lib/BMI088)(options "")(descr ""))
+  (lib (name CAT24C32WI-GT3)(type KiCad)(uri ${KIPRJMOD}/lib/CAT24C32WI-GT3)(options "")(descr ""))
+  (lib (name CAT24C32YI-GT3)(type KiCad)(uri ${KIPRJMOD}/lib/CAT24C32YI-GT3)(options "")(descr ""))
+  (lib (name DMMT5401)(type KiCad)(uri ${KIPRJMOD}/lib/DMMT5401)(options "")(descr ""))
+  (lib (name LM2677S-3v3)(type KiCad)(uri ${KIPRJMOD}/lib/LM2677S-3v3)(options "")(descr ""))
+  (lib (name LM2677S-5)(type KiCad)(uri ${KIPRJMOD}/lib/LM2677S-5.0)(options "")(descr ""))
+  (lib (name PCA9615)(type KiCad)(uri ${KIPRJMOD}/lib/PCA9615)(options "")(descr ""))
+  (lib (name pwr_custom)(type KiCad)(uri ${KIPRJMOD}/lib/pwr_custom)(options "")(descr ""))
+  (lib (name SM07B-SRSS-TB)(type KiCad)(uri ${KIPRJMOD}/lib/SM07B-SRSS-TB)(options "")(descr ""))
+)

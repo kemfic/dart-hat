@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -14,15 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM2677S-5.0:LM2677S-5.0 U?
+L LM2677S-5.0:LM2677S-5.0 U4
 U 1 1 6175201D
 P 6000 4250
-AR Path="/6175047F/6175201D" Ref="U?"  Part="1" 
+AR Path="/6175047F/6175201D" Ref="U4"  Part="1" 
 AR Path="/617748F9/6175201D" Ref="U?"  Part="1" 
 AR Path="/619B79F1/6175201D" Ref="U?"  Part="1" 
-AR Path="/619C4F1E/6175201D" Ref="U?"  Part="1" 
+AR Path="/619C4F1E/6175201D" Ref="U7"  Part="1" 
 AR Path="/619C86ED/6175201D" Ref="U?"  Part="1" 
-F 0 "U?" H 6000 5020 50  0000 C CNN
+F 0 "U4" H 6000 5020 50  0000 C CNN
 F 1 "LM2677S-5.0" H 6000 4929 50  0000 C CNN
 F 2 "TO127P1435X464-8N" H 6000 4250 50  0001 L BNN
 F 3 "" H 6000 4250 50  0001 L BNN
@@ -40,15 +40,15 @@ V_OUT
 Wire Wire Line
 	6750 4750 6700 4750
 $Comp
-L Device:D_Schottky D?
+L Device:D_Schottky D3
 U 1 1 617603E2
 P 7250 4600
-AR Path="/6175047F/617603E2" Ref="D?"  Part="1" 
+AR Path="/6175047F/617603E2" Ref="D3"  Part="1" 
 AR Path="/617748F9/617603E2" Ref="D?"  Part="1" 
 AR Path="/619B79F1/617603E2" Ref="D?"  Part="1" 
-AR Path="/619C4F1E/617603E2" Ref="D?"  Part="1" 
+AR Path="/619C4F1E/617603E2" Ref="D6"  Part="1" 
 AR Path="/619C86ED/617603E2" Ref="D?"  Part="1" 
-F 0 "D?" V 7204 4679 50  0000 L CNN
+F 0 "D3" V 7204 4679 50  0000 L CNN
 F 1 "D_Schottky" V 7295 4679 50  0000 L CNN
 F 2 "" H 7250 4600 50  0001 C CNN
 F 3 "~" H 7250 4600 50  0001 C CNN
@@ -73,15 +73,15 @@ Wire Wire Line
 Wire Wire Line
 	6750 4750 7250 4750
 $Comp
-L Device:L_Small L?
+L Device:L_Small L1
 U 1 1 61768ED3
 P 7050 3750
-AR Path="/6175047F/61768ED3" Ref="L?"  Part="1" 
+AR Path="/6175047F/61768ED3" Ref="L1"  Part="1" 
 AR Path="/617748F9/61768ED3" Ref="L?"  Part="1" 
 AR Path="/619B79F1/61768ED3" Ref="L?"  Part="1" 
-AR Path="/619C4F1E/61768ED3" Ref="L?"  Part="1" 
+AR Path="/619C4F1E/61768ED3" Ref="L2"  Part="1" 
 AR Path="/619C86ED/61768ED3" Ref="L?"  Part="1" 
-F 0 "L?" V 7235 3750 50  0000 C CNN
+F 0 "L1" V 7235 3750 50  0000 C CNN
 F 1 "L_Small" V 7144 3750 50  0000 C CNN
 F 2 "" H 7050 3750 50  0001 C CNN
 F 3 "~" H 7050 3750 50  0001 C CNN
@@ -91,15 +91,15 @@ $EndComp
 Wire Wire Line
 	6850 3750 6950 3750
 $Comp
-L Device:C_Small C?
+L Device:C_Small C14
 U 1 1 6176CADF
 P 5900 3150
-AR Path="/6175047F/6176CADF" Ref="C?"  Part="1" 
+AR Path="/6175047F/6176CADF" Ref="C14"  Part="1" 
 AR Path="/617748F9/6176CADF" Ref="C?"  Part="1" 
 AR Path="/619B79F1/6176CADF" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/6176CADF" Ref="C?"  Part="1" 
+AR Path="/619C4F1E/6176CADF" Ref="C25"  Part="1" 
 AR Path="/619C86ED/6176CADF" Ref="C?"  Part="1" 
-F 0 "C?" V 5671 3150 50  0000 C CNN
+F 0 "C14" V 5671 3150 50  0000 C CNN
 F 1 "0.01uF" V 5762 3150 50  0000 C CNN
 F 2 "" H 5900 3150 50  0001 C CNN
 F 3 "~" H 5900 3150 50  0001 C CNN
@@ -135,12 +135,12 @@ NoConn ~ 5300 4550
 Text Notes 900  3850 0    50   ~ 0
 Inductors (L41, 22uH, 5.22A max)\n - Pulse Engineering P0841\n\nC_out:\n - 3xC2 (AVX), 2xC7 (Sprague), 3xC4 (kemet)\n\n\nC_in:\n - 3xC13 (sprague), 4xC12(kemet)\n\nDiode: \n - MBRB1545CT\n - 6TQ045S
 $Comp
-L Device:C_Small C?
+L Device:C_Small C15
 U 1 1 61A51E59
 P 7750 4200
-AR Path="/6175047F/61A51E59" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/61A51E59" Ref="C?"  Part="1" 
-F 0 "C?" H 7842 4246 50  0000 L CNN
+AR Path="/6175047F/61A51E59" Ref="C15"  Part="1" 
+AR Path="/619C4F1E/61A51E59" Ref="C26"  Part="1" 
+F 0 "C15" H 7842 4246 50  0000 L CNN
 F 1 "180uF" H 7842 4155 50  0000 L CNN
 F 2 "" H 7750 4200 50  0001 C CNN
 F 3 "~" H 7750 4200 50  0001 C CNN
@@ -148,12 +148,12 @@ F 3 "~" H 7750 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C16
 U 1 1 61A52F3A
 P 8150 4200
-AR Path="/6175047F/61A52F3A" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/61A52F3A" Ref="C?"  Part="1" 
-F 0 "C?" H 8242 4246 50  0000 L CNN
+AR Path="/6175047F/61A52F3A" Ref="C16"  Part="1" 
+AR Path="/619C4F1E/61A52F3A" Ref="C27"  Part="1" 
+F 0 "C16" H 8242 4246 50  0000 L CNN
 F 1 "180uF" H 8242 4155 50  0000 L CNN
 F 2 "" H 8150 4200 50  0001 C CNN
 F 3 "~" H 8150 4200 50  0001 C CNN
@@ -169,12 +169,12 @@ Connection ~ 7750 4100
 Wire Wire Line
 	3600 3750 3700 3750
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 61A5F9C8
 P 3350 4100
-AR Path="/6175047F/61A5F9C8" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/61A5F9C8" Ref="C?"  Part="1" 
-F 0 "C?" H 3442 4146 50  0000 L CNN
+AR Path="/6175047F/61A5F9C8" Ref="C11"  Part="1" 
+AR Path="/619C4F1E/61A5F9C8" Ref="C22"  Part="1" 
+F 0 "C11" H 3442 4146 50  0000 L CNN
 F 1 "15uF" H 3442 4055 50  0000 L CNN
 F 2 "" H 3350 4100 50  0001 C CNN
 F 3 "~" H 3350 4100 50  0001 C CNN
@@ -182,12 +182,12 @@ F 3 "~" H 3350 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 61A60CAD
 P 3700 4100
-AR Path="/6175047F/61A60CAD" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/61A60CAD" Ref="C?"  Part="1" 
-F 0 "C?" H 3792 4146 50  0000 L CNN
+AR Path="/6175047F/61A60CAD" Ref="C12"  Part="1" 
+AR Path="/619C4F1E/61A60CAD" Ref="C23"  Part="1" 
+F 0 "C12" H 3792 4146 50  0000 L CNN
 F 1 "15uF" H 3792 4055 50  0000 L CNN
 F 2 "" H 3700 4100 50  0001 C CNN
 F 3 "~" H 3700 4100 50  0001 C CNN
@@ -195,12 +195,12 @@ F 3 "~" H 3700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C13
 U 1 1 61A62459
 P 4050 4100
-AR Path="/6175047F/61A62459" Ref="C?"  Part="1" 
-AR Path="/619C4F1E/61A62459" Ref="C?"  Part="1" 
-F 0 "C?" H 4142 4146 50  0000 L CNN
+AR Path="/6175047F/61A62459" Ref="C13"  Part="1" 
+AR Path="/619C4F1E/61A62459" Ref="C24"  Part="1" 
+F 0 "C13" H 4142 4146 50  0000 L CNN
 F 1 "15uF" H 4142 4055 50  0000 L CNN
 F 2 "" H 4050 4100 50  0001 C CNN
 F 3 "~" H 4050 4100 50  0001 C CNN

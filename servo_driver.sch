@@ -32,10 +32,10 @@ Wire Wire Line
 Text HLabel 5800 5050 3    50   Input ~ 0
 GND
 $Comp
-L Driver_LED:PCA9685PW U?
+L Driver_LED:PCA9685PW U6
 U 1 1 61AF04F5
 P 5800 3700
-F 0 "U?" H 5800 4881 50  0000 C CNN
+F 0 "U6" H 5800 4881 50  0000 C CNN
 F 1 "PCA9685PW" H 5800 4790 50  0000 C CNN
 F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 5825 2725 50  0001 L CNN
 F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 5400 4400 50  0001 C CNN
@@ -43,10 +43,10 @@ F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 5400 4400 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C20
 U 1 1 61AFE32D
 P 2100 3800
-F 0 "C?" H 2192 3846 50  0000 L CNN
+F 0 "C20" H 2192 3846 50  0000 L CNN
 F 1 "10uF" H 2192 3755 50  0000 L CNN
 F 2 "" H 2100 3800 50  0001 C CNN
 F 3 "~" H 2100 3800 50  0001 C CNN
@@ -54,10 +54,10 @@ F 3 "~" H 2100 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C19
 U 1 1 61AFE9E7
 P 1700 3800
-F 0 "C?" H 1792 3846 50  0000 L CNN
+F 0 "C19" H 1792 3846 50  0000 L CNN
 F 1 "0.1uF" H 1792 3755 50  0000 L CNN
 F 2 "" H 1700 3800 50  0001 C CNN
 F 3 "~" H 1700 3800 50  0001 C CNN
@@ -81,10 +81,10 @@ Connection ~ 1700 3700
 Text Notes 7000 2000 0    50   ~ 0
 TODO:\n    - reverse voltage protection (backcurrent)\n    - decoupling\n    - fuses\n    - power setup\n
 $Comp
-L Device:R_Small R?
+L Device:R_Small R19
 U 1 1 61A44E55
 P 7850 3100
-F 0 "R?" V 7654 3100 50  0000 C CNN
+F 0 "R19" V 7654 3100 50  0000 C CNN
 F 1 "220" V 7745 3100 50  0000 C CNN
 F 2 "" H 7850 3100 50  0001 C CNN
 F 3 "~" H 7850 3100 50  0001 C CNN
@@ -92,10 +92,10 @@ F 3 "~" H 7850 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M1
 U 1 1 61AAC45D
 P 9050 3200
-F 0 "M?" H 9382 3265 50  0000 L CNN
+F 0 "M1" H 9382 3265 50  0000 L CNN
 F 1 "Motor_Servo" H 9382 3174 50  0000 L CNN
 F 2 "" H 9050 3010 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3010 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3010
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M2
 U 1 1 61AB6B78
 P 9050 3550
-F 0 "M?" H 9382 3615 50  0000 L CNN
+F 0 "M2" H 9382 3615 50  0000 L CNN
 F 1 "Motor_Servo" H 9382 3524 50  0000 L CNN
 F 2 "" H 9050 3360 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3360 50  0001 C CNN
@@ -114,10 +114,10 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3360
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M3
 U 1 1 61AC1470
 P 9050 3900
-F 0 "M?" H 9382 3965 50  0000 L CNN
+F 0 "M3" H 9382 3965 50  0000 L CNN
 F 1 "Motor_Servo" H 9382 3874 50  0000 L CNN
 F 2 "" H 9050 3710 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3710 50  0001 C CNN
@@ -125,10 +125,10 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 3710
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M4
 U 1 1 61AC1476
 P 9050 4250
-F 0 "M?" H 9382 4315 50  0000 L CNN
+F 0 "M4" H 9382 4315 50  0000 L CNN
 F 1 "Motor_Servo" H 9382 4224 50  0000 L CNN
 F 2 "" H 9050 4060 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 4060 50  0001 C CNN
@@ -140,10 +140,10 @@ Wire Wire Line
 Text Label 7500 3100 0    50   ~ 0
 PWM0
 $Comp
-L Device:R_Small R?
+L Device:R_Small R20
 U 1 1 61ACE5FC
 P 7850 3450
-F 0 "R?" V 7654 3450 50  0000 C CNN
+F 0 "R20" V 7654 3450 50  0000 C CNN
 F 1 "220" V 7745 3450 50  0000 C CNN
 F 2 "" H 7850 3450 50  0001 C CNN
 F 3 "~" H 7850 3450 50  0001 C CNN
@@ -155,10 +155,10 @@ Wire Wire Line
 Text Label 7500 3450 0    50   ~ 0
 PWM1
 $Comp
-L Device:R_Small R?
+L Device:R_Small R21
 U 1 1 61ACED83
 P 7850 3800
-F 0 "R?" V 7654 3800 50  0000 C CNN
+F 0 "R21" V 7654 3800 50  0000 C CNN
 F 1 "220" V 7745 3800 50  0000 C CNN
 F 2 "" H 7850 3800 50  0001 C CNN
 F 3 "~" H 7850 3800 50  0001 C CNN
@@ -170,10 +170,10 @@ Wire Wire Line
 Text Label 7500 3800 0    50   ~ 0
 PWM2
 $Comp
-L Device:R_Small R?
+L Device:R_Small R22
 U 1 1 61ACF554
 P 7850 4150
-F 0 "R?" V 7654 4150 50  0000 C CNN
+F 0 "R22" V 7654 4150 50  0000 C CNN
 F 1 "220" V 7745 4150 50  0000 C CNN
 F 2 "" H 7850 4150 50  0001 C CNN
 F 3 "~" H 7850 4150 50  0001 C CNN
@@ -214,10 +214,10 @@ Wire Wire Line
 Wire Wire Line
 	4400 3200 4400 3450
 $Comp
-L Device:R_Small R?
+L Device:R_Small R18
 U 1 1 61AEE150
 P 4650 3450
-F 0 "R?" V 4846 3450 50  0000 C CNN
+F 0 "R18" V 4846 3450 50  0000 C CNN
 F 1 "10k" V 4755 3450 50  0000 C CNN
 F 2 "" H 4650 3450 50  0001 C CNN
 F 3 "~" H 4650 3450 50  0001 C CNN
@@ -231,10 +231,10 @@ Wire Wire Line
 Wire Wire Line
 	4550 3450 4400 3450
 $Comp
-L Device:D_Schottky D?
+L Device:D_Schottky D5
 U 1 1 61B09031
 P 8450 4800
-F 0 "D?" H 8450 4584 50  0000 C CNN
+F 0 "D5" H 8450 4584 50  0000 C CNN
 F 1 "D_Schottky" H 8450 4675 50  0000 C CNN
 F 2 "" H 8450 4800 50  0001 C CNN
 F 3 "~" H 8450 4800 50  0001 C CNN
@@ -261,10 +261,10 @@ Wire Wire Line
 	8650 4800 8600 4800
 Connection ~ 8650 4800
 $Comp
-L Device:CP_Small C?
+L Device:CP_Small C21
 U 1 1 61B588AD
 P 8450 5200
-F 0 "C?" V 8675 5200 50  0000 C CNN
+F 0 "C21" V 8675 5200 50  0000 C CNN
 F 1 "1000uF" V 8584 5200 50  0000 C CNN
 F 2 "" H 8450 5200 50  0001 C CNN
 F 3 "~" H 8450 5200 50  0001 C CNN
@@ -304,10 +304,10 @@ Wire Wire Line
 Text Notes 8800 4950 0    50   ~ 0
 NOTE: should the bypass cap \n      and flyback diode be in series\n      or parallel?\n\nNOTE: check BEC sheet and remove redundant components
 $Comp
-L Device:LED_Small D?
+L Device:LED_Small D4
 U 1 1 61B9D802
 P 2050 5150
-F 0 "D?" H 2050 4945 50  0000 C CNN
+F 0 "D4" H 2050 4945 50  0000 C CNN
 F 1 "PWR_LED_SERVO" H 2050 5036 50  0000 C CNN
 F 2 "" V 2050 5150 50  0001 C CNN
 F 3 "~" V 2050 5150 50  0001 C CNN
@@ -321,10 +321,10 @@ Wire Wire Line
 Wire Wire Line
 	2800 5150 2800 5300
 $Comp
-L Device:R_Small R?
+L Device:R_Small R17
 U 1 1 61BA0867
 P 2550 5150
-F 0 "R?" V 2354 5150 50  0000 C CNN
+F 0 "R17" V 2354 5150 50  0000 C CNN
 F 1 "220" V 2445 5150 50  0000 C CNN
 F 2 "" H 2550 5150 50  0001 C CNN
 F 3 "~" H 2550 5150 50  0001 C CNN

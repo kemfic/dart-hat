@@ -43,7 +43,7 @@ U 1 1 61884E94
 P 5400 4200
 F 0 "R14" H 5459 4246 50  0000 L CNN
 F 1 "10k" H 5459 4155 50  0000 L CNN
-F 2 "" H 5400 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 4200 50  0001 C CNN
 F 3 "~" H 5400 4200 50  0001 C CNN
 	1    5400 4200
 	1    0    0    -1  
@@ -57,21 +57,8 @@ Wire Wire Line
 Wire Wire Line
 	5400 4450 6100 4450
 Connection ~ 6100 4450
-$Comp
-L Connector:Conn_01x03_Female J2
-U 1 1 6188C8F1
-P 1150 1350
-F 0 "J2" H 1042 1635 50  0000 C CNN
-F 1 "CAN_CONN" H 1042 1544 50  0000 C CNN
-F 2 "" H 1150 1350 50  0001 C CNN
-F 3 "~" H 1150 1350 50  0001 C CNN
-	1    1150 1350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	1350 1450 1550 1450
-Wire Wire Line
-	1550 1450 1550 1650
+	1300 1600 1500 1600
 Wire Notes Line
 	950  1900 2000 1900
 Wire Notes Line
@@ -82,44 +69,6 @@ Wire Notes Line
 	950  950  950  1900
 Text Notes 950  900  0    50   ~ 0
 CAN Connector
-Wire Notes Line
-	2350 950  2350 1900
-Wire Notes Line
-	3350 1900 3350 950 
-Wire Notes Line
-	3350 950  2350 950 
-Text Notes 2350 900  0    50   ~ 0
-CAN Termination
-Wire Notes Line
-	2350 1900 3350 1900
-Wire Wire Line
-	3200 1750 3200 1700
-Wire Wire Line
-	3200 1400 3200 1500
-Wire Wire Line
-	3200 1200 3200 1150
-$Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 618B011F
-P 3200 1600
-F 0 "JP2" V 3154 1552 50  0000 R CNN
-F 1 "Jumper" V 3245 1552 50  0000 R CNN
-F 2 "" H 3200 1600 50  0001 C CNN
-F 3 "~" H 3200 1600 50  0001 C CNN
-	1    3200 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R12
-U 1 1 618AFADF
-P 3200 1300
-F 0 "R12" H 3142 1254 50  0000 R CNN
-F 1 "120" H 3142 1345 50  0000 R CNN
-F 2 "" H 3200 1300 50  0001 C CNN
-F 3 "~" H 3200 1300 50  0001 C CNN
-	1    3200 1300
-	1    0    0    1   
-$EndComp
 Text HLabel 1850 3750 0    50   Input ~ 0
 SPI_CE0
 Text HLabel 1850 3850 0    50   Input ~ 0
@@ -142,7 +91,7 @@ U 1 1 618DEC12
 P 1750 4350
 F 0 "Y1" V 1704 4438 50  0000 L CNN
 F 1 "16MHz" V 1795 4438 50  0000 L CNN
-F 2 "" H 1750 4350 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 1750 4350 50  0001 C CNN
 F 3 "~" H 1750 4350 50  0001 C CNN
 	1    1750 4350
 	0    1    1    0   
@@ -153,7 +102,7 @@ U 1 1 618E0189
 P 1550 4550
 F 0 "C5" V 1321 4550 50  0000 C CNN
 F 1 "22pF" V 1412 4550 50  0000 C CNN
-F 2 "" H 1550 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 4550 50  0001 C CNN
 F 3 "~" H 1550 4550 50  0001 C CNN
 	1    1550 4550
 	0    -1   1    0   
@@ -168,7 +117,7 @@ U 1 1 618E179D
 P 1550 4200
 F 0 "C4" V 1321 4200 50  0000 C CNN
 F 1 "22pF" V 1412 4200 50  0000 C CNN
-F 2 "" H 1550 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 4200 50  0001 C CNN
 F 3 "~" H 1550 4200 50  0001 C CNN
 	1    1550 4200
 	0    1    1    0   
@@ -205,9 +154,9 @@ Wire Wire Line
 Wire Wire Line
 	2550 3350 3050 3350
 Wire Wire Line
-	5600 3550 3650 3550
+	5600 3550 4600 3550
 Wire Wire Line
-	5600 3650 3650 3650
+	5600 3650 4650 3650
 NoConn ~ 5450 3850
 Wire Wire Line
 	5600 3850 5450 3850
@@ -217,7 +166,7 @@ U 1 1 6190115F
 P 3950 4150
 F 0 "JP3" H 3950 4335 50  0000 C CNN
 F 1 "Jumper" H 3950 4244 50  0000 C CNN
-F 2 "" H 3950 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3950 4150 50  0001 C CNN
 F 3 "~" H 3950 4150 50  0001 C CNN
 	1    3950 4150
 	1    0    0    -1  
@@ -234,7 +183,7 @@ U 1 1 619064FA
 P 4050 4750
 F 0 "R13" V 3854 4750 50  0000 C CNN
 F 1 "10k" V 3945 4750 50  0000 C CNN
-F 2 "" H 4050 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 4750 50  0001 C CNN
 F 3 "~" H 4050 4750 50  0001 C CNN
 	1    4050 4750
 	0    1    1    0   
@@ -277,23 +226,15 @@ Text Label 7100 3650 2    50   ~ 0
 CAN_H
 Text Label 7100 3850 2    50   ~ 0
 CAN_L
-Text Label 2650 1150 0    50   ~ 0
-CAN_H
-Text Label 2600 1750 0    50   ~ 0
-CAN_L
-Wire Wire Line
-	2600 1750 3200 1750
-Wire Wire Line
-	2650 1150 3200 1150
-Text Label 1850 1250 2    50   ~ 0
+Text Label 1800 1400 2    50   ~ 0
 CAN_H
 Wire Wire Line
-	1350 1250 1850 1250
+	1300 1400 1800 1400
 Wire Wire Line
-	1350 1350 1850 1350
-Text Label 1850 1350 2    50   ~ 0
+	1300 1500 1800 1500
+Text Label 1800 1500 2    50   ~ 0
 CAN_L
-Text HLabel 1550 1650 3    50   Input ~ 0
+Text HLabel 1500 1600 3    50   Input ~ 0
 GND
 Text HLabel 4300 4150 2    50   Input ~ 0
 CAN_INT
@@ -303,7 +244,7 @@ U 1 1 61CFFC49
 P 4000 5400
 F 0 "C7" H 4092 5446 50  0000 L CNN
 F 1 "10uF" H 4092 5355 50  0000 L CNN
-F 2 "" H 4000 5400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5400 50  0001 C CNN
 F 3 "~" H 4000 5400 50  0001 C CNN
 	1    4000 5400
 	1    0    0    -1  
@@ -314,7 +255,7 @@ U 1 1 61CFFEED
 P 3600 5400
 F 0 "C6" H 3692 5446 50  0000 L CNN
 F 1 "0.1uF" H 3692 5355 50  0000 L CNN
-F 2 "" H 3600 5400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 5400 50  0001 C CNN
 F 3 "~" H 3600 5400 50  0001 C CNN
 	1    3600 5400
 	1    0    0    -1  
@@ -339,4 +280,114 @@ Wire Wire Line
 	7100 3850 6600 3850
 Wire Wire Line
 	7100 3650 6600 3650
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 61A48E3F
+P 1100 1500
+F 0 "J2" H 992 1075 50  0000 C CNN
+F 1 "CAN_CON" H 992 1166 50  0000 C CNN
+F 2 "JST-PH-S4B-K-S-LF-SN:JST_S4B-PH-K-S(LF)(SN)" H 1100 1500 50  0001 C CNN
+F 3 "~" H 1100 1500 50  0001 C CNN
+	1    1100 1500
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1300 1300
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61BE96EB
+P 4600 3550
+F 0 "TP5" H 4542 3622 50  0000 R CNN
+F 1 "TestPoint" H 4658 3577 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4800 3550 50  0001 C CNN
+F 3 "~" H 4800 3550 50  0001 C CNN
+	1    4600 3550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4600 3550
+Wire Wire Line
+	4600 3550 3650 3550
+$Comp
+L Connector:TestPoint TP6
+U 1 1 61BEAEA6
+P 4650 3700
+F 0 "TP6" H 4593 3772 50  0000 R CNN
+F 1 "TestPoint" H 4708 3727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4850 3700 50  0001 C CNN
+F 3 "~" H 4850 3700 50  0001 C CNN
+	1    4650 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3700 4650 3650
+Connection ~ 4650 3650
+Wire Wire Line
+	4650 3650 3650 3650
+Wire Wire Line
+	2650 1150 3200 1150
+Wire Wire Line
+	2600 1750 3200 1750
+Text Label 2600 1750 0    50   ~ 0
+CAN_L
+Text Label 2650 1150 0    50   ~ 0
+CAN_H
+$Comp
+L Device:R_Small R12
+U 1 1 618AFADF
+P 3200 1300
+F 0 "R12" H 3142 1254 50  0000 R CNN
+F 1 "120" H 3142 1345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3200 1300 50  0001 C CNN
+F 3 "~" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 618B011F
+P 3200 1600
+F 0 "JP2" V 3154 1552 50  0000 R CNN
+F 1 "Jumper" V 3245 1552 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3200 1600 50  0001 C CNN
+F 3 "~" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1200 3200 1150
+Wire Wire Line
+	3200 1400 3200 1500
+Wire Wire Line
+	3200 1750 3200 1700
+Wire Notes Line
+	2350 1900 3350 1900
+Text Notes 2350 900  0    50   ~ 0
+CAN Termination
+Wire Notes Line
+	3350 950  2350 950 
+Wire Notes Line
+	3350 1900 3350 950 
+Wire Notes Line
+	2350 950  2350 1900
+$Comp
+L Connector:TestPoint TP13
+U 1 1 61C5D8AE
+P 7100 3650
+F 0 "TP13" V 7100 3838 50  0000 L CNN
+F 1 "TestPoint" V 7145 3838 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7300 3650 50  0001 C CNN
+F 3 "~" H 7300 3650 50  0001 C CNN
+	1    7100 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 61C5E05D
+P 7100 3850
+F 0 "TP14" V 7100 4038 50  0000 L CNN
+F 1 "TestPoint" V 7145 4038 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7300 3850 50  0001 C CNN
+F 3 "~" H 7300 3850 50  0001 C CNN
+	1    7100 3850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

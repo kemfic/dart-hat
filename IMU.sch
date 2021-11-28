@@ -19,7 +19,7 @@ U 1 1 61AAAEE7
 P 4100 3500
 F 0 "U5" H 4100 4367 50  0000 C CNN
 F 1 "BMI088" H 4100 4276 50  0000 C CNN
-F 2 "PQFN50P450X300X100-16N" H 4100 3500 50  0001 L BNN
+F 2 "BMI088:PQFN50P450X300X100-16N" H 4100 3500 50  0001 L BNN
 F 3 "" H 4100 3500 50  0001 L BNN
 F 4 "https://pricing.snapeda.com/search/part/BMI088/?ref=eda" H 4100 3500 50  0001 L BNN "PURCHASE-URL"
 F 5 "VFLGA-16 Bosch Sensortec" H 4100 3500 50  0001 L BNN "PACKAGE"
@@ -41,19 +41,12 @@ Wire Wire Line
 	4800 4100 4800 4400
 Text Notes 6800 3450 0    50   ~ 0
 NOTES: bmi088 driver has DRDY wired to gpio26 (pin 6 on wiringpi)\n - i2c should be easier but i'm going for SPI since the old implementation works\n - shuttle has interrupt pin jumper\n - might want to not only expose the jumper for this,\n    but also tie in 2 separate GPIO pins with the 2.54mm \n    headers on each interrupt so i can manually connect \n    interrupt pins?\n\nIMPORTANT: review the SPI initialization behavior (6.1, p45, bmi088 datasheet)\n  - looks like GND on PS sets gyro to SPI mode\n  - giving a rising edge on the  CS pin for the accel switches it to spi mode. this can be done via a dummy read/write operation
-Wire Wire Line
-	5150 3500 5150 3700
 Text HLabel 5500 3700 2    50   Input ~ 0
 BMI_INT
 Text Label 5050 3500 2    50   ~ 0
 INT1_A
 Text Label 5050 3600 2    50   ~ 0
 INT2_A
-Connection ~ 5150 3700
-Wire Wire Line
-	5150 3700 5500 3700
-Wire Wire Line
-	4800 3700 5150 3700
 Wire Wire Line
 	4800 3500 5150 3500
 Wire Wire Line
@@ -79,7 +72,7 @@ U 1 1 61AB1A8B
 P 1550 3650
 F 0 "C17" H 1642 3696 50  0000 L CNN
 F 1 "0.1uF" H 1642 3605 50  0000 L CNN
-F 2 "" H 1550 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 3650 50  0001 C CNN
 F 3 "~" H 1550 3650 50  0001 C CNN
 	1    1550 3650
 	1    0    0    -1  
@@ -90,7 +83,7 @@ U 1 1 61AB21C7
 P 1950 3650
 F 0 "C18" H 2042 3696 50  0000 L CNN
 F 1 "10uF" H 2042 3605 50  0000 L CNN
-F 2 "" H 1950 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1950 3650 50  0001 C CNN
 F 3 "~" H 1950 3650 50  0001 C CNN
 	1    1950 3650
 	1    0    0    -1  
@@ -138,4 +131,20 @@ Text HLabel 1550 3350 1    50   Input ~ 0
 VCC
 Text HLabel 4800 2650 1    50   Input ~ 0
 VCC
+Wire Wire Line
+	4800 3700 5150 3700
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 61C0280C
+P 5150 3600
+F 0 "JP7" V 5150 3648 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 5195 3648 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 3600 50  0001 C CNN
+F 3 "~" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 5150 3700
+Wire Wire Line
+	5150 3700 5500 3700
 $EndSCHEMATC

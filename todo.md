@@ -1,22 +1,24 @@
 todo
 --- 
- - populate component reference ids
+ - find connectors
+	- xt60
+	- diffi2c
+	- can
 
- - source parts
+ - double check IC pinouts are correct
+	- PFETS
+	- DMMT5401
+	- pi header
+	- connectors
+		- net wiring
 
- - review wiring for each subsystem (with datasheets)
-	- hierarchical pins
-	- decoupling
-	- resistor values and id numbers
-	- global labels
-	- terminations?
+ - inductors
+	- double check the footprint matches
+	- within rating
 
- - schematics review with arsenio,bois
+ - ensure CAN, diffi2c input voltages are within rating
 
-footprint/net notes
----
- - double check connector pinouts
- - double check DMMT5401 (A vs. B footprint)
+ - find clock specs
 
 later
 --- 

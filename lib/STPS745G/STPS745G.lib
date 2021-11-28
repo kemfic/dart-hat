@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# STPS745G
+#
+DEF STPS745G D 0 40 Y Y 1 L N
+F0 "D" -91 104 50 H V L BNN
+F1 "STPS745G" -101 -177 50 H V L BNN
+F2 "TO254P1543X460-3N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "STMicroelectronics" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 10 -50 -75 50 0 N
+P 2 0 0 10 50 0 -50 75 N
+P 2 0 0 10 -50 75 -50 0 N
+P 2 0 0 10 -50 0 -50 -75 N
+P 2 0 0 10 55 75 55 -75 N
+P 2 0 0 10 50 0 200 0 N
+P 2 0 0 10 -50 0 -200 0 N
+X A 3 -300 0 100 R 40 40 0 0 P 
+X C 4 300 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

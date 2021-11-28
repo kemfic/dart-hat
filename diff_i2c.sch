@@ -19,7 +19,7 @@ U 1 1 61968298
 P 1600 1300
 F 0 "J3" H 1208 1665 50  0000 C CNN
 F 1 "SM07B-SRSS-TBLFSN" H 1208 1574 50  0000 C CNN
-F 2 "JST-SM07B-SRSS-TBLFSN-*" H 1600 1800 50  0001 L CNN
+F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 1600 1800 50  0001 L CNN
 F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 1600 1900 50  0001 L CNN
 F 4 "Tin" H 1600 2000 50  0001 L CNN "Contact Finish"
 F 5 "7" H 1600 2100 50  0001 L CNN "Number of Positions"
@@ -46,9 +46,9 @@ Wire Wire Line
 	1650 2900 1500 2900
 Wire Wire Line
 	1650 2700 1500 2700
-Text HLabel 1800 2100 2    50   Input ~ 0
-3v3
-Text HLabel 1800 2300 2    50   Input ~ 0
+Text HLabel 3250 2100 2    50   Input ~ 0
+VCC
+Text HLabel 3250 2300 2    50   Input ~ 0
 GND
 Wire Wire Line
 	1500 2500 2000 2500
@@ -58,7 +58,7 @@ U 1 1 6196BAC2
 P 2000 2700
 F 0 "JP5" V 2046 2652 50  0000 R CNN
 F 1 "Jumper_NO_Small" V 1955 2652 50  0000 R CNN
-F 2 "" H 2000 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 2700 50  0001 C CNN
 F 3 "~" H 2000 2700 50  0001 C CNN
 	1    2000 2700
 	0    -1   -1   0   
@@ -72,7 +72,7 @@ U 1 1 6196BE9A
 P 2000 3100
 F 0 "C8" H 2092 3146 50  0000 L CNN
 F 1 "10uF" H 2092 3055 50  0000 L CNN
-F 2 "" H 2000 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 3100 50  0001 C CNN
 F 3 "~" H 2000 3100 50  0001 C CNN
 	1    2000 3100
 	1    0    0    -1  
@@ -93,11 +93,7 @@ Wire Wire Line
 	1500 1700 1800 1700
 Wire Wire Line
 	1500 1900 1800 1900
-Wire Wire Line
-	1500 2100 1800 2100
-Wire Wire Line
-	1500 2300 1800 2300
-Text Notes 2100 2200 0    50   ~ 0
+Text Notes 3550 2200 0    50   ~ 0
 NOTE: might want to add \n      flyback diodes and current protection here.
 $Comp
 L PCA9615:PCA9615DPJ IC1
@@ -105,7 +101,7 @@ U 1 1 61971D78
 P 5450 3550
 F 0 "IC1" H 6100 3817 50  0000 C CNN
 F 1 "PCA9615DPJ" H 6100 3726 50  0000 C CNN
-F 2 "SOP50P490X110-10N" H 5450 3550 50  0001 L BNN
+F 2 "PCA9615:PCA9615_SOP50P490" H 5450 3550 50  0001 L BNN
 F 3 "" H 5450 3550 50  0001 L BNN
 F 4 "NXP - PCA9615DPJ - BUFFER, DIFFERENTIAL I2C-BUS, TSSOP-10" H 5450 3550 50  0001 L BNN "Description"
 F 5 "https://www.mouser.com/Search/Refine.aspx?Keyword=771-PCA9615DPJ" H 5450 3550 50  0001 L BNN "Mouser_Price-Stock"
@@ -135,7 +131,7 @@ U 1 1 6198DB03
 P 4300 4200
 F 0 "C10" H 4392 4246 50  0000 L CNN
 F 1 "10uF" H 4392 4155 50  0000 L CNN
-F 2 "" H 4300 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4300 4200 50  0001 C CNN
 F 3 "~" H 4300 4200 50  0001 C CNN
 	1    4300 4200
 	1    0    0    -1  
@@ -150,7 +146,7 @@ U 1 1 61991791
 P 3900 4200
 F 0 "C9" H 3992 4246 50  0000 L CNN
 F 1 "10uF" H 3992 4155 50  0000 L CNN
-F 2 "" H 3900 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 4200 50  0001 C CNN
 F 3 "~" H 3900 4200 50  0001 C CNN
 	1    3900 4200
 	1    0    0    -1  
@@ -166,10 +162,6 @@ Wire Wire Line
 	6750 3950 7050 3950
 Wire Wire Line
 	6750 3850 7050 3850
-Wire Wire Line
-	6750 3750 7050 3750
-Wire Wire Line
-	6750 3650 7050 3650
 Text Label 2400 2500 0    50   ~ 0
 SHLD
 Wire Wire Line
@@ -184,7 +176,7 @@ AR Path="/6187FA0A/61A12829" Ref="JP?"  Part="1"
 AR Path="/6195FE87/61A12829" Ref="JP4"  Part="1" 
 F 0 "JP4" V 1554 4552 50  0000 R CNN
 F 1 "Jumper" V 1645 4552 50  0000 R CNN
-F 2 "" H 1600 4600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 4600 50  0001 C CNN
 F 3 "~" H 1600 4600 50  0001 C CNN
 	1    1600 4600
 	0    1    1    0   
@@ -197,7 +189,7 @@ AR Path="/6187FA0A/61A1282F" Ref="R?"  Part="1"
 AR Path="/6195FE87/61A1282F" Ref="R15"  Part="1" 
 F 0 "R15" H 1542 4854 50  0000 R CNN
 F 1 "120" H 1542 4945 50  0000 R CNN
-F 2 "" H 1600 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 4900 50  0001 C CNN
 F 3 "~" H 1600 4900 50  0001 C CNN
 	1    1600 4900
 	1    0    0    1   
@@ -216,7 +208,7 @@ AR Path="/6187FA0A/61A23D3B" Ref="JP?"  Part="1"
 AR Path="/6195FE87/61A23D3B" Ref="JP6"  Part="1" 
 F 0 "JP6" V 2204 4552 50  0000 R CNN
 F 1 "Jumper" V 2295 4552 50  0000 R CNN
-F 2 "" H 2250 4600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 4600 50  0001 C CNN
 F 3 "~" H 2250 4600 50  0001 C CNN
 	1    2250 4600
 	0    1    1    0   
@@ -229,7 +221,7 @@ AR Path="/6187FA0A/61A23D41" Ref="R?"  Part="1"
 AR Path="/6195FE87/61A23D41" Ref="R16"  Part="1" 
 F 0 "R16" H 2192 4854 50  0000 R CNN
 F 1 "120" H 2192 4945 50  0000 R CNN
-F 2 "" H 2250 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 4900 50  0001 C CNN
 F 3 "~" H 2250 4900 50  0001 C CNN
 	1    2250 4900
 	1    0    0    1   
@@ -298,4 +290,86 @@ Text Label 1800 1700 2    50   ~ 0
 SDA+
 Text Label 1800 1900 2    50   ~ 0
 SDA-
+Wire Wire Line
+	6750 3750 7050 3750
+Wire Wire Line
+	6750 3650 7050 3650
+$Comp
+L Connector:TestPoint TP9
+U 1 1 61B8A771
+P 7050 3650
+F 0 "TP9" V 7050 3838 50  0000 L CNN
+F 1 "TestPoint" V 7095 3838 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3650 50  0001 C CNN
+F 3 "~" H 7250 3650 50  0001 C CNN
+	1    7050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 61B8ADC9
+P 7050 3750
+F 0 "TP10" V 7050 3938 50  0000 L CNN
+F 1 "TestPoint" V 7095 3938 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3750 50  0001 C CNN
+F 3 "~" H 7250 3750 50  0001 C CNN
+	1    7050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 61B8C5BF
+P 7050 3850
+F 0 "TP11" V 7050 4038 50  0000 L CNN
+F 1 "TestPoint" V 7095 4038 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3850 50  0001 C CNN
+F 3 "~" H 7250 3850 50  0001 C CNN
+	1    7050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 61B8C5C5
+P 7050 3950
+F 0 "TP12" V 7050 4138 50  0000 L CNN
+F 1 "TestPoint" V 7095 4138 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3950 50  0001 C CNN
+F 3 "~" H 7250 3950 50  0001 C CNN
+	1    7050 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2100 3050 2100
+Wire Wire Line
+	1500 2300 3050 2300
+$Comp
+L Connector:TestPoint TP8
+U 1 1 61B915B9
+P 3050 2400
+F 0 "TP8" H 2992 2426 50  0000 R CNN
+F 1 "TestPoint" H 2992 2517 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3250 2400 50  0001 C CNN
+F 3 "~" H 3250 2400 50  0001 C CNN
+	1    3050 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 2400 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3250 2300
+$Comp
+L Connector:TestPoint TP7
+U 1 1 61B932FB
+P 3050 2100
+F 0 "TP7" H 3108 2172 50  0000 L CNN
+F 1 "TestPoint" H 3108 2127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3250 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3050 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 2100 3250 2100
 $EndSCHEMATC

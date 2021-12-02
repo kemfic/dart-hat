@@ -7,4 +7,5 @@
   (lib (name DMMT5401)(type Legacy)(uri ${KIPRJMOD}/lib/DMMT5401/DMMT5401-7-F.lib)(options "")(descr ""))
   (lib (name pwr_custom)(type Legacy)(uri ${KIPRJMOD}/lib/pwr_custom/pwr_custom.lib)(options "")(descr ""))
   (lib (name CAT24C32YI-GT3)(type Legacy)(uri ${KIPRJMOD}/lib/CAT24C32YI-GT3/CAT24C32YI-GT3.lib)(options "")(descr ""))
+  (lib (name SI2337DS-T1-E3)(type Legacy)(uri ${KIPRJMOD}/lib/SI2337DS-T1-E3/SI2337DS-T1-E3.lib)(options "")(descr ""))
 )

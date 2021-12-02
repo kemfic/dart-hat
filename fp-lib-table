@@ -14,4 +14,5 @@
   (lib (name XT60PW-M)(type KiCad)(uri ${KIPRJMOD}/lib/XT60PW-M)(options "")(descr ""))
   (lib (name STPS745G)(type KiCad)(uri ${KIPRJMOD}/lib/STPS745G)(options "")(descr ""))
   (lib (name TO254P1521X483-4N)(type KiCad)(uri ${KIPRJMOD}/lib/TO254P1521X483-4N)(options "")(descr ""))
+  (lib (name SI2337DS-T1-E3)(type KiCad)(uri ${KIPRJMOD}/lib/SI2337DS-T1-E3)(options "")(descr ""))
 )

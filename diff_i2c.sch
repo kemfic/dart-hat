@@ -283,9 +283,9 @@ SCL+
 Text Label 2050 5150 0    50   ~ 0
 SCL-
 Text Label 1800 1300 2    50   ~ 0
-SCL+
-Text Label 1800 1500 2    50   ~ 0
 SCL-
+Text Label 1800 1500 2    50   ~ 0
+SCL+
 Text Label 1800 1700 2    50   ~ 0
 SDA+
 Text Label 1800 1900 2    50   ~ 0

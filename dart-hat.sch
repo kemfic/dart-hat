@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -1125,19 +1125,19 @@ U 1 1 61B5D01C
 P 2100 1350
 F 0 "TP1" H 2042 1376 50  0000 R CNN
 F 1 "TestPoint" H 2042 1467 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 2300 1350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2300 1350 50  0001 C CNN
 F 3 "~" H 2300 1350 50  0001 C CNN
 	1    2100 1350
 	-1   0    0    1   
 $EndComp
 Connection ~ 2100 1350
 $Comp
-L Connector:TestPoint TP66
+L Connector:TestPoint TP15
 U 1 1 61B5F8F9
 P 2100 900
-F 0 "TP66" H 2042 1018 50  0000 R CNN
+F 0 "TP15" H 2042 1018 50  0000 R CNN
 F 1 "TestPoint" H 2042 927 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 2300 900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2300 900 50  0001 C CNN
 F 3 "~" H 2300 900 50  0001 C CNN
 	1    2100 900 
 	-1   0    0    -1  
@@ -1150,7 +1150,7 @@ U 1 1 61B7B3D6
 P 2650 2800
 F 0 "TP2" H 2592 2872 50  0000 R CNN
 F 1 "TestPoint" H 2592 2917 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 2850 2800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 2800 50  0001 C CNN
 F 3 "~" H 2850 2800 50  0001 C CNN
 	1    2650 2800
 	-1   0    0    1   
@@ -1164,7 +1164,7 @@ U 1 1 61BC21B5
 P 8900 5000
 F 0 "TP3" H 8842 5072 50  0000 R CNN
 F 1 "TestPoint" H 8842 5117 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 9100 5000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9100 5000 50  0001 C CNN
 F 3 "~" H 9100 5000 50  0001 C CNN
 	1    8900 5000
 	-1   0    0    1   
@@ -1180,7 +1180,7 @@ U 1 1 61BCA5D5
 P 9300 4900
 F 0 "TP4" H 9358 4972 50  0000 L CNN
 F 1 "TestPoint" H 9358 4927 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 9500 4900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9500 4900 50  0001 C CNN
 F 3 "~" H 9500 4900 50  0001 C CNN
 	1    9300 4900
 	1    0    0    -1  
@@ -1331,4 +1331,10 @@ F 3 "~" H 2100 2900 50  0001 C CNN
 	1    2100 2900
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 5300 1150 1600 1100
+U 61BC5F5B
+F0 "5V Power Supply" 50
+F1 "5V_Power_Supply.sch" 50
+$EndSheet
 $EndSCHEMATC

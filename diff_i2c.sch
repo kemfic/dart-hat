@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L JST-SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J3
+L JST-SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J4
 U 1 1 61968298
 P 1600 1300
-F 0 "J3" H 1208 1665 50  0000 C CNN
+F 0 "J4" H 1208 1665 50  0000 C CNN
 F 1 "SM07B-SRSS-TBLFSN" H 1208 1574 50  0000 C CNN
 F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 1600 1800 50  0001 L CNN
 F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 1600 1900 50  0001 L CNN
@@ -37,6 +37,8 @@ F 16 "HDR7" H 1600 3200 50  0001 L CNN "package"
 F 17 "yes" H 1600 3300 50  0001 L CNN "rohs"
 F 18 "+85°C" H 1600 3400 50  0001 L CNN "temperature range high"
 F 19 "-25°C" H 1600 3500 50  0001 L CNN "temperature range low"
+F 20 "JST-SM Connector 7 Position" H 1600 1300 50  0001 C CNN "Description"
+F 21 "SM07B-SRSS-TBLFSN" H 1600 1300 50  0001 C CNN "Manufacturer_Part_Number"
 	1    1600 1300
 	1    0    0    -1  
 $EndComp
@@ -60,6 +62,9 @@ F 0 "JP5" V 2046 2652 50  0000 R CNN
 F 1 "Jumper_NO_Small" V 1955 2652 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 2700 50  0001 C CNN
 F 3 "~" H 2000 2700 50  0001 C CNN
+F 4 "Pin Header" H 2000 2700 50  0001 C CNN "Description"
+F 5 "DI2C" H 2000 2700 50  0001 C CNN "category"
+F 6 "2x2.54mm" H 2000 2700 50  0001 C CNN "package"
 	1    2000 2700
 	0    -1   -1   0   
 $EndComp
@@ -67,13 +72,17 @@ Connection ~ 2000 2500
 Wire Wire Line
 	2000 2500 2400 2500
 $Comp
-L Device:C_Small C8
+L Device:C_Small C10
 U 1 1 6196BE9A
 P 2000 3100
-F 0 "C8" H 2092 3146 50  0000 L CNN
+F 0 "C10" H 2092 3146 50  0000 L CNN
 F 1 "10uF" H 2092 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2000 3100 50  0001 C CNN
 F 3 "~" H 2000 3100 50  0001 C CNN
+F 4 "25V MLCC 10%" H 2000 3100 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 2000 3100 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "DI2C" H 2000 3100 50  0001 C CNN "category"
+F 7 "0603" H 2000 3100 50  0001 C CNN "package"
 	1    2000 3100
 	1    0    0    -1  
 $EndComp
@@ -109,6 +118,8 @@ F 6 "PCA9615DPJ" H 5450 3550 50  0001 L BNN "Manufacturer_Part_Number"
 F 7 "NXP" H 5450 3550 50  0001 L BNN "Manufacturer_Name"
 F 8 "1.1mm" H 5450 3550 50  0001 L BNN "Height"
 F 9 "771-PCA9615DPJ" H 5450 3550 50  0001 L BNN "Mouser_Part_Number"
+F 10 "DI2C" H 5450 3550 50  0001 C CNN "category"
+F 11 "10-MSOP" H 5450 3550 50  0001 C CNN "package"
 	1    5450 3550
 	1    0    0    -1  
 $EndComp
@@ -126,13 +137,17 @@ Wire Wire Line
 Wire Wire Line
 	5450 3150 5450 3550
 $Comp
-L Device:C_Small C10
+L Device:C_Small C12
 U 1 1 6198DB03
 P 4300 4200
-F 0 "C10" H 4392 4246 50  0000 L CNN
+F 0 "C12" H 4392 4246 50  0000 L CNN
 F 1 "10uF" H 4392 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4300 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 4200 50  0001 C CNN
 F 3 "~" H 4300 4200 50  0001 C CNN
+F 4 "25V MLCC 10%" H 4300 4200 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 4300 4200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "EEPROM" H 4300 4200 50  0001 C CNN "category"
+F 7 "0603" H 4300 4200 50  0001 C CNN "package"
 	1    4300 4200
 	1    0    0    -1  
 $EndComp
@@ -141,13 +156,17 @@ Wire Wire Line
 Wire Wire Line
 	4300 4300 4300 4400
 $Comp
-L Device:C_Small C9
+L Device:C_Small C11
 U 1 1 61991791
 P 3900 4200
-F 0 "C9" H 3992 4246 50  0000 L CNN
+F 0 "C11" H 3992 4246 50  0000 L CNN
 F 1 "10uF" H 3992 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 4200 50  0001 C CNN
 F 3 "~" H 3900 4200 50  0001 C CNN
+F 4 "25V MLCC 10%" H 3900 4200 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 3900 4200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "EEPROM" H 3900 4200 50  0001 C CNN "category"
+F 7 "0603" H 3900 4200 50  0001 C CNN "package"
 	1    3900 4200
 	1    0    0    -1  
 $EndComp
@@ -178,6 +197,9 @@ F 0 "JP4" V 1554 4552 50  0000 R CNN
 F 1 "Jumper" V 1645 4552 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 4600 50  0001 C CNN
 F 3 "~" H 1600 4600 50  0001 C CNN
+F 4 "Pin Header" H 1600 4600 50  0001 C CNN "Description"
+F 5 "DI2C" H 1600 4600 50  0001 C CNN "category"
+F 6 "2x2.54mm" H 1600 4600 50  0001 C CNN "package"
 	1    1600 4600
 	0    1    1    0   
 $EndComp
@@ -186,11 +208,15 @@ L Device:R_Small R?
 U 1 1 61A1282F
 P 1600 4900
 AR Path="/6187FA0A/61A1282F" Ref="R?"  Part="1" 
-AR Path="/6195FE87/61A1282F" Ref="R15"  Part="1" 
-F 0 "R15" H 1542 4854 50  0000 R CNN
+AR Path="/6195FE87/61A1282F" Ref="R16"  Part="1" 
+F 0 "R16" H 1542 4854 50  0000 R CNN
 F 1 "120" H 1542 4945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 4900 50  0001 C CNN
 F 3 "~" H 1600 4900 50  0001 C CNN
+F 4 "100V 125mW Resistor 0.1%" H 1600 4900 50  0001 C CNN "Description"
+F 5 "ERA-6VEB1200V" H 1600 4900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "DI2C" H 1600 4900 50  0001 C CNN "category"
+F 7 "0805" H 1600 4900 50  0001 C CNN "package"
 	1    1600 4900
 	1    0    0    1   
 $EndComp
@@ -210,6 +236,9 @@ F 0 "JP6" V 2204 4552 50  0000 R CNN
 F 1 "Jumper" V 2295 4552 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 4600 50  0001 C CNN
 F 3 "~" H 2250 4600 50  0001 C CNN
+F 4 "Pin Header" H 2250 4600 50  0001 C CNN "Description"
+F 5 "DI2C" H 2250 4600 50  0001 C CNN "category"
+F 6 "2x2.54mm" H 2250 4600 50  0001 C CNN "package"
 	1    2250 4600
 	0    1    1    0   
 $EndComp
@@ -218,11 +247,15 @@ L Device:R_Small R?
 U 1 1 61A23D41
 P 2250 4900
 AR Path="/6187FA0A/61A23D41" Ref="R?"  Part="1" 
-AR Path="/6195FE87/61A23D41" Ref="R16"  Part="1" 
-F 0 "R16" H 2192 4854 50  0000 R CNN
+AR Path="/6195FE87/61A23D41" Ref="R17"  Part="1" 
+F 0 "R17" H 2192 4854 50  0000 R CNN
 F 1 "120" H 2192 4945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 4900 50  0001 C CNN
 F 3 "~" H 2250 4900 50  0001 C CNN
+F 4 "100V 125mW Resistor 0.1%" H 2250 4900 50  0001 C CNN "Description"
+F 5 "ERA-6VEB1200V" H 2250 4900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "DI2C" H 2250 4900 50  0001 C CNN "category"
+F 7 "0805" H 2250 4900 50  0001 C CNN "package"
 	1    2250 4900
 	1    0    0    1   
 $EndComp
@@ -295,45 +328,45 @@ Wire Wire Line
 Wire Wire Line
 	6750 3650 7050 3650
 $Comp
-L Connector:TestPoint TP9
+L Connector:TestPoint TP10
 U 1 1 61B8A771
 P 7050 3650
-F 0 "TP9" V 7050 3838 50  0000 L CNN
+F 0 "TP10" V 7050 3838 50  0000 L CNN
 F 1 "TestPoint" V 7095 3838 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3650 50  0001 C CNN
 F 3 "~" H 7250 3650 50  0001 C CNN
 	1    7050 3650
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP10
+L Connector:TestPoint TP11
 U 1 1 61B8ADC9
 P 7050 3750
-F 0 "TP10" V 7050 3938 50  0000 L CNN
+F 0 "TP11" V 7050 3938 50  0000 L CNN
 F 1 "TestPoint" V 7095 3938 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3750 50  0001 C CNN
 F 3 "~" H 7250 3750 50  0001 C CNN
 	1    7050 3750
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP11
+L Connector:TestPoint TP12
 U 1 1 61B8C5BF
 P 7050 3850
-F 0 "TP11" V 7050 4038 50  0000 L CNN
+F 0 "TP12" V 7050 4038 50  0000 L CNN
 F 1 "TestPoint" V 7095 4038 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3850 50  0001 C CNN
 F 3 "~" H 7250 3850 50  0001 C CNN
 	1    7050 3850
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP12
+L Connector:TestPoint TP13
 U 1 1 61B8C5C5
 P 7050 3950
-F 0 "TP12" V 7050 4138 50  0000 L CNN
+F 0 "TP13" V 7050 4138 50  0000 L CNN
 F 1 "TestPoint" V 7095 4138 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 7250 3950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3950 50  0001 C CNN
 F 3 "~" H 7250 3950 50  0001 C CNN
 	1    7050 3950
 	0    1    1    0   
@@ -343,12 +376,12 @@ Wire Wire Line
 Wire Wire Line
 	1500 2300 3050 2300
 $Comp
-L Connector:TestPoint TP8
+L Connector:TestPoint TP9
 U 1 1 61B915B9
 P 3050 2400
-F 0 "TP8" H 2992 2426 50  0000 R CNN
+F 0 "TP9" H 2992 2426 50  0000 R CNN
 F 1 "TestPoint" H 2992 2517 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3250 2400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3250 2400 50  0001 C CNN
 F 3 "~" H 3250 2400 50  0001 C CNN
 	1    3050 2400
 	-1   0    0    1   
@@ -359,12 +392,12 @@ Connection ~ 3050 2300
 Wire Wire Line
 	3050 2300 3250 2300
 $Comp
-L Connector:TestPoint TP7
+L Connector:TestPoint TP8
 U 1 1 61B932FB
 P 3050 2100
-F 0 "TP7" H 3108 2172 50  0000 L CNN
+F 0 "TP8" H 3108 2172 50  0000 L CNN
 F 1 "TestPoint" H 3108 2127 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3250 2100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3250 2100 50  0001 C CNN
 F 3 "~" H 3250 2100 50  0001 C CNN
 	1    3050 2100
 	1    0    0    -1  

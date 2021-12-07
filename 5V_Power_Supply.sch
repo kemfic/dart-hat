@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -14,13 +14,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM25088MH-2:LM25088MH-2 U?
+L LM25088MH-2:LM25088MH-2 U7
 U 1 1 61C2A6E3
 P 5750 3900
-F 0 "U?" H 5750 5181 50  0000 C CNN
+F 0 "U7" H 5750 5181 50  0000 C CNN
 F 1 "LM25088MH-2" H 5750 5090 50  0000 C CNN
 F 2 "SOP65P640X120-17N" H 5750 3900 50  0001 L BNN
 F 3 "" H 5750 3900 50  0001 L BNN
+F 4 "LM25088MH-2 Buck Converter" H 5750 3900 50  0001 C CNN "Description"
+F 5 "LM25088MH-2" H 5750 3900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 5750 3900 50  0001 C CNN "category"
+F 7 "SOP65" H 5750 3900 50  0001 C CNN "package"
 	1    5750 3900
 	1    0    0    -1  
 $EndComp
@@ -34,13 +38,17 @@ GND
 Text HLabel 10500 3550 2    50   Input ~ 0
 VOUT
 $Comp
-L Device:R_Small R?
+L Device:R_Small R28
 U 1 1 61C378E9
 P 7200 4000
-F 0 "R?" H 7259 4046 50  0000 L CNN
+F 0 "R28" H 7259 4046 50  0000 L CNN
 F 1 "0.01" H 7259 3955 50  0000 L CNN
-F 2 "" H 7200 4000 50  0001 C CNN
+F 2 "RL3720WT-R010-F:RESC2037X70N" H 7200 4000 50  0001 C CNN
 F 3 "~" H 7200 4000 50  0001 C CNN
+F 4 "1W Wide Current Sense Resistor 1%" H 7200 4000 50  0001 C CNN "Description"
+F 5 "RL3720WT-R010-F" H 7200 4000 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7200 4000 50  0001 C CNN "category"
+F 7 "1508" H 7200 4000 50  0001 C CNN "package"
 	1    7200 4000
 	1    0    0    -1  
 $EndComp
@@ -56,24 +64,32 @@ Wire Wire Line
 Text HLabel 7650 4100 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C?
+L Device:C_Small C33
 U 1 1 61C50E4B
 P 7650 3850
-F 0 "C?" V 7879 3850 50  0000 C CNN
+F 0 "C33" V 7879 3850 50  0000 C CNN
 F 1 "1000pF" V 7788 3850 50  0000 C CNN
-F 2 "" H 7650 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 3850 50  0001 C CNN
 F 3 "~" H 7650 3850 50  0001 C CNN
+F 4 "100V MLCC 5%" H 7650 3850 50  0001 C CNN "Description"
+F 5 "GRM2195C2A102JA01D" H 7650 3850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7650 3850 50  0001 C CNN "category"
+F 7 "0805" H 7650 3850 50  0001 C CNN "package"
 	1    7650 3850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R30
 U 1 1 61C5175E
 P 7900 3650
-F 0 "R?" H 7959 3696 50  0000 L CNN
+F 0 "R30" H 7959 3696 50  0000 L CNN
 F 1 "5.11" H 7959 3605 50  0000 L CNN
-F 2 "" H 7900 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" H 7900 3650 50  0001 C CNN
 F 3 "~" H 7900 3650 50  0001 C CNN
+F 4 "1W Resistor 1%" H 7900 3650 50  0001 C CNN "Description"
+F 5 "ERJ-1TRQF5R1U" H 7900 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7900 3650 50  0001 C CNN "category"
+F 7 "2512" H 7900 3650 50  0001 C CNN "package"
 	1    7900 3650
 	1    0    0    -1  
 $EndComp
@@ -84,13 +100,17 @@ Wire Wire Line
 Wire Wire Line
 	6450 3550 6800 3550
 $Comp
-L Device:C_Small C?
+L Device:C_Small C30
 U 1 1 61C54297
 P 6700 3450
-F 0 "C?" V 6471 3450 50  0000 C CNN
+F 0 "C30" V 6471 3450 50  0000 C CNN
 F 1 "0.1uF" V 6562 3450 50  0000 C CNN
-F 2 "" H 6700 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 3450 50  0001 C CNN
 F 3 "~" H 6700 3450 50  0001 C CNN
+F 4 "100V MLCC 10%" H 6700 3450 50  0001 C CNN "Description"
+F 5 "GRM188R72A104KA35D" H 6700 3450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 6700 3450 50  0001 C CNN "category"
+F 7 "0603" H 6700 3450 50  0001 C CNN "package"
 	1    6700 3450
 	0    1    1    0   
 $EndComp
@@ -100,13 +120,17 @@ Wire Wire Line
 	6800 3450 6800 3550
 Connection ~ 6800 3550
 $Comp
-L Device:Q_NMOS_DGS Q?
+L Device:Q_NMOS_DGS Q4
 U 1 1 61C56924
 P 7250 3100
-F 0 "Q?" H 7454 3146 50  0000 L CNN
+F 0 "Q4" H 7454 3146 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 7454 3055 50  0000 L CNN
-F 2 "" H 7450 3200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 7450 3200 50  0001 C CNN
 F 3 "~" H 7250 3100 50  0001 C CNN
+F 4 "PowerPak SO-8 NMOS 40V 10A" H 7250 3100 50  0001 C CNN "Description"
+F 5 "SQM120N04-1M7L_GE3" H 7250 3100 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7250 3100 50  0001 C CNN "category"
+F 7 "PowerPak SO-8 Single" H 7250 3100 50  0001 C CNN "package"
 	1    7250 3100
 	1    0    0    -1  
 $EndComp
@@ -135,24 +159,31 @@ Wire Wire Line
 Wire Wire Line
 	7250 3850 7550 3850
 $Comp
-L Dual_Schottky_Common_Cathode:Diode_Schottky_Common_Cathode D?
+L Dual_Schottky_Common_Cathode:Diode_Schottky_Common_Cathode D8
 U 1 1 61C4AB47
 P 7200 3750
-F 0 "D?" H 7318 3775 50  0000 L CNN
+F 0 "D8" H 7318 3775 50  0000 L CNN
 F 1 "Diode_Schottky_Common_Cathode" H 7318 3718 50  0001 L CNN
-F 2 "" H 7250 3750 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 7250 3750 50  0001 C CNN
 F 3 "~" H 7250 3750 50  0001 C CNN
+F 4 "15A 45V Schottky Rectifier" H 7200 3750 50  0001 C CNN "Description"
+F 5 "MBRB1545CTT4G" H 7200 3750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7200 3750 50  0001 C CNN "category"
+F 7 "D2PAK" H 7200 3750 50  0001 C CNN "package"
 	1    7200 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Small L?
+L Device:L_Small L1
 U 1 1 61C6085A
 P 8350 3550
-F 0 "L?" V 8535 3550 50  0000 C CNN
+F 0 "L1" V 8535 3550 50  0000 C CNN
 F 1 "6.8uH" V 8444 3550 50  0000 C CNN
-F 2 "" H 8350 3550 50  0001 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 8350 3550 50  0001 C CNN
 F 3 "~" H 8350 3550 50  0001 C CNN
+F 4 "15A Fixed Inductor" H 8350 3550 50  0001 C CNN "Description"
+F 5 "HC9-6R8-R" H 8350 3550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 8350 3550 50  0001 C CNN "category"
 	1    8350 3550
 	0    -1   -1   0   
 $EndComp
@@ -160,57 +191,61 @@ Wire Wire Line
 	8250 3550 7900 3550
 Connection ~ 7900 3550
 $Comp
-L Device:CP_Small C?
+L Device:CP_Small CP4
 U 1 1 61C64376
 P 8650 3650
-F 0 "C?" H 8738 3696 50  0000 L CNN
+F 0 "CP4" H 8738 3696 50  0000 L CNN
 F 1 "470uF" H 8738 3605 50  0000 L CNN
-F 2 "" H 8650 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 8650 3650 50  0001 C CNN
 F 3 "~" H 8650 3650 50  0001 C CNN
+F 4 "6.3V SMD Electrolytic 20%" H 8650 3650 50  0001 C CNN "Description"
+F 5 "APXH6R3ARA471MJ80G" H 8650 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 8650 3650 50  0001 C CNN "category"
 	1    8650 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C?
-U 1 1 61C653D3
-P 9050 3650
-F 0 "C?" H 9138 3696 50  0000 L CNN
-F 1 "NU" H 9138 3605 50  0000 L CNN
-F 2 "" H 9050 3650 50  0001 C CNN
-F 3 "~" H 9050 3650 50  0001 C CNN
-	1    9050 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
+L Device:C_Small C34
 U 1 1 61C68C53
 P 9450 3650
-F 0 "C?" H 9542 3696 50  0000 L CNN
+F 0 "C34" H 9542 3696 50  0000 L CNN
 F 1 "47uF" H 9542 3605 50  0000 L CNN
-F 2 "" H 9450 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9450 3650 50  0001 C CNN
 F 3 "~" H 9450 3650 50  0001 C CNN
+F 4 "16V MLCC 10%" H 9450 3650 50  0001 C CNN "Description"
+F 5 "GRM32ER61C476KE15L" H 9450 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 9450 3650 50  0001 C CNN "category"
+F 7 "1210" H 9450 3650 50  0001 C CNN "package"
 	1    9450 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C35
 U 1 1 61C69FD6
 P 9800 3650
-F 0 "C?" H 9892 3696 50  0000 L CNN
+F 0 "C35" H 9892 3696 50  0000 L CNN
 F 1 "47uF" H 9892 3605 50  0000 L CNN
-F 2 "" H 9800 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9800 3650 50  0001 C CNN
 F 3 "~" H 9800 3650 50  0001 C CNN
+F 4 "16V MLCC 10%" H 9800 3650 50  0001 C CNN "Description"
+F 5 "GRM32ER61C476KE15L" H 9800 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 9800 3650 50  0001 C CNN "category"
+F 7 "1210" H 9800 3650 50  0001 C CNN "package"
 	1    9800 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C36
 U 1 1 61C6C25F
 P 10150 3650
-F 0 "C?" H 10242 3696 50  0000 L CNN
+F 0 "C36" H 10242 3696 50  0000 L CNN
 F 1 "0.1uF" H 10242 3605 50  0000 L CNN
-F 2 "" H 10150 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10150 3650 50  0001 C CNN
 F 3 "~" H 10150 3650 50  0001 C CNN
+F 4 "100V MLCC 10%" H 10150 3650 50  0001 C CNN "Description"
+F 5 "C2012X7R2A104K125AA" H 10150 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 10150 3650 50  0001 C CNN "category"
+F 7 "0805" H 10150 3650 50  0001 C CNN "package"
 	1    10150 3650
 	1    0    0    -1  
 $EndComp
@@ -219,12 +254,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 3750 8650 3900
 Connection ~ 8650 3750
-Connection ~ 9050 3750
-Wire Wire Line
-	9050 3750 8650 3750
 Connection ~ 9450 3750
-Wire Wire Line
-	9450 3750 9050 3750
 Connection ~ 9800 3750
 Wire Wire Line
 	9800 3750 9450 3750
@@ -233,24 +263,32 @@ GND
 Wire Wire Line
 	10500 3550 10400 3550
 $Comp
-L Device:R_Small R?
+L Device:R_Small R31
 U 1 1 61C71565
 P 10400 4050
-F 0 "R?" H 10459 4096 50  0000 L CNN
+F 0 "R31" H 10459 4096 50  0000 L CNN
 F 1 "10" H 10459 4005 50  0000 L CNN
-F 2 "" H 10400 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10400 4050 50  0001 C CNN
 F 3 "~" H 10400 4050 50  0001 C CNN
+F 4 "125mW Resistor 1%" H 10400 4050 50  0001 C CNN "Description"
+F 5 "SFR10EZPF10R0" H 10400 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 10400 4050 50  0001 C CNN "category"
+F 7 "0805" H 10400 4050 50  0001 C CNN "package"
 	1    10400 4050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R32
 U 1 1 61C720B7
 P 10400 4450
-F 0 "R?" H 10459 4496 50  0000 L CNN
+F 0 "R32" H 10459 4496 50  0000 L CNN
 F 1 "5.11k" H 10459 4405 50  0000 L CNN
-F 2 "" H 10400 4450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10400 4450 50  0001 C CNN
 F 3 "~" H 10400 4450 50  0001 C CNN
+F 4 "100mW Resistor 1%" H 10400 4450 50  0001 C CNN "Description"
+F 5 "ERJ-S03F5111V" H 10400 4450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 10400 4450 50  0001 C CNN "category"
+F 7 "0603" H 10400 4450 50  0001 C CNN "package"
 	1    10400 4450
 	1    0    0    -1  
 $EndComp
@@ -264,35 +302,47 @@ Wire Wire Line
 Text HLabel 10400 5650 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C?
+L Device:C_Small C32
 U 1 1 61C75D05
 P 7450 4750
-F 0 "C?" H 7358 4704 50  0000 R CNN
+F 0 "C32" H 7358 4704 50  0000 R CNN
 F 1 "0.015uF" H 7358 4795 50  0000 R CNN
-F 2 "" H 7450 4750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7450 4750 50  0001 C CNN
 F 3 "~" H 7450 4750 50  0001 C CNN
+F 4 "50V MLCC 10%" H 7450 4750 50  0001 C CNN "Description"
+F 5 "GRM155R71H153KA12D" H 7450 4750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7450 4750 50  0001 C CNN "category"
+F 7 "0402" H 7450 4750 50  0001 C CNN "package"
 	1    7450 4750
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C31
 U 1 1 61C7697E
 P 6950 4750
-F 0 "C?" H 6858 4704 50  0000 R CNN
+F 0 "C31" H 6858 4704 50  0000 R CNN
 F 1 "100pF" H 6858 4795 50  0000 R CNN
-F 2 "" H 6950 4750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6950 4750 50  0001 C CNN
 F 3 "~" H 6950 4750 50  0001 C CNN
+F 4 "100V MLCC 1%" H 6950 4750 50  0001 C CNN "Description"
+F 5 "06031A101FAT2A" H 6950 4750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 6950 4750 50  0001 C CNN "category"
+F 7 "0603" H 6950 4750 50  0001 C CNN "package"
 	1    6950 4750
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R29
 U 1 1 61C82374
 P 7450 5000
-F 0 "R?" H 7509 5046 50  0000 L CNN
-F 1 "18.2k" H 7509 4955 50  0000 L CNN
-F 2 "" H 7450 5000 50  0001 C CNN
+F 0 "R29" H 7509 5046 50  0000 L CNN
+F 1 "18k" H 7509 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7450 5000 50  0001 C CNN
 F 3 "~" H 7450 5000 50  0001 C CNN
+F 4 "100mW Resistor 1%" H 7450 5000 50  0001 C CNN "Description"
+F 5 "RN73H1JTTD1802F100" H 7450 5000 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 7450 5000 50  0001 C CNN "category"
+F 7 "0603" H 7450 5000 50  0001 C CNN "package"
 	1    7450 5000
 	1    0    0    -1  
 $EndComp
@@ -319,13 +369,17 @@ Wire Wire Line
 Wire Wire Line
 	7450 5100 7450 5150
 $Comp
-L Device:R_Small R?
+L Device:R_Small R33
 U 1 1 61C96D8F
 P 10400 5250
-F 0 "R?" H 10459 5296 50  0000 L CNN
+F 0 "R33" H 10459 5296 50  0000 L CNN
 F 1 "1.62k" H 10459 5205 50  0000 L CNN
-F 2 "" H 10400 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10400 5250 50  0001 C CNN
 F 3 "~" H 10400 5250 50  0001 C CNN
+F 4 "100mW Resistor 1%" H 10400 5250 50  0001 C CNN "Description"
+F 5 "CR0603-FX-1621ELF" H 10400 5250 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 10400 5250 50  0001 C CNN "category"
+F 7 "0603" H 10400 5250 50  0001 C CNN "package"
 	1    10400 5250
 	1    0    0    -1  
 $EndComp
@@ -344,44 +398,47 @@ Connection ~ 10400 4850
 Wire Wire Line
 	10400 4850 10400 5150
 Connection ~ 8650 3550
-Connection ~ 9050 3550
 Connection ~ 9450 3550
 Connection ~ 9800 3550
 Connection ~ 10150 3550
 Wire Wire Line
 	8450 3550 8500 3550
 Wire Wire Line
-	9050 3550 9450 3550
-Wire Wire Line
 	9450 3550 9800 3550
 Wire Wire Line
 	9800 3550 10150 3550
-Wire Wire Line
-	8650 3550 9050 3550
 Wire Wire Line
 	6450 4250 8500 4250
 Wire Wire Line
 	8500 4250 8500 3550
 Connection ~ 8500 3550
 $Comp
-L Device:C_Small C?
+L Device:C_Small C24
 U 1 1 61CA6189
 P 4100 4900
-F 0 "C?" H 4192 4946 50  0000 L CNN
+F 0 "C24" H 4192 4946 50  0000 L CNN
 F 1 "0.022uF" H 4192 4855 50  0000 L CNN
-F 2 "" H 4100 4900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 4900 50  0001 C CNN
 F 3 "~" H 4100 4900 50  0001 C CNN
+F 4 "100V MLCC 10%" H 4100 4900 50  0001 C CNN "Description"
+F 5 "GRM188R72A223KAC4D" H 4100 4900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4100 4900 50  0001 C CNN "category"
+F 7 "0603" H 4100 4900 50  0001 C CNN "package"
 	1    4100 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C27
 U 1 1 61CA9FA5
 P 4600 4900
-F 0 "C?" H 4692 4946 50  0000 L CNN
+F 0 "C27" H 4692 4946 50  0000 L CNN
 F 1 "0.022uF" H 4692 4855 50  0000 L CNN
-F 2 "" H 4600 4900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 4900 50  0001 C CNN
 F 3 "~" H 4600 4900 50  0001 C CNN
+F 4 "100V MLCC 10%" H 4600 4900 50  0001 C CNN "Description"
+F 5 "GRM188R72A223KAC4D" H 4600 4900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4600 4900 50  0001 C CNN "category"
+F 7 "0603" H 4600 4900 50  0001 C CNN "package"
 	1    4600 4900
 	1    0    0    -1  
 $EndComp
@@ -400,97 +457,112 @@ Wire Wire Line
 Connection ~ 4600 5000
 Text HLabel 4600 5150 0    50   Input ~ 0
 GND
-Text HLabel 3600 4000 2    50   Input ~ 0
+Text HLabel 4750 4350 2    50   Input ~ 0
 GND
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP14
 U 1 1 61CBB35C
-P 3000 3550
-F 0 "TP?" V 3195 3622 50  0000 C CNN
-F 1 "TestPoint" V 3104 3622 50  0000 C CNN
-F 2 "" H 3200 3550 50  0001 C CNN
-F 3 "~" H 3200 3550 50  0001 C CNN
-	1    3000 3550
+P 4150 3900
+F 0 "TP14" V 4345 3972 50  0000 C CNN
+F 1 "TestPoint" V 4254 3972 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4350 3900 50  0001 C CNN
+F 3 "~" H 4350 3900 50  0001 C CNN
+	1    4150 3900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3200 3550 3000 3550
+	4350 3900 4150 3900
 Wire Wire Line
-	3600 3900 3600 4000
+	4750 4250 4750 4350
 $Comp
-L Device:C_Small C?
+L Device:C_Small C26
 U 1 1 61CB81FA
-P 3300 3550
-F 0 "C?" V 3071 3550 50  0000 C CNN
-F 1 "100pF" V 3162 3550 50  0000 C CNN
-F 2 "" H 3300 3550 50  0001 C CNN
-F 3 "~" H 3300 3550 50  0001 C CNN
-	1    3300 3550
+P 4450 3900
+F 0 "C26" V 4221 3900 50  0000 C CNN
+F 1 "100pF" V 4312 3900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 3900 50  0001 C CNN
+F 3 "~" H 4450 3900 50  0001 C CNN
+F 4 "100V MLCC 1%" H 4450 3900 50  0001 C CNN "Description"
+F 5 "06031A101FAT2A" H 4450 3900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4450 3900 50  0001 C CNN "category"
+F 7 "0603" H 4450 3900 50  0001 C CNN "package"
+	1    4450 3900
 	0    1    1    0   
 $EndComp
-Connection ~ 3600 3550
 Wire Wire Line
-	3600 3550 3400 3550
+	4750 3900 4550 3900
 Wire Wire Line
-	3600 3550 3600 3700
+	4750 3900 4750 4050
 $Comp
-L Device:R_Small R?
+L Device:R_Small R27
 U 1 1 61CB548B
-P 3600 3800
-F 0 "R?" H 3659 3846 50  0000 L CNN
-F 1 "24.9k" H 3659 3755 50  0000 L CNN
-F 2 "" H 3600 3800 50  0001 C CNN
-F 3 "~" H 3600 3800 50  0001 C CNN
-	1    3600 3800
+P 4750 4150
+F 0 "R27" H 4809 4196 50  0000 L CNN
+F 1 "24.9k" H 4809 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 4150 50  0001 C CNN
+F 3 "~" H 4750 4150 50  0001 C CNN
+F 4 "100mW Resistor 1%" H 4750 4150 50  0001 C CNN "Description"
+F 5 "RT0603FRE0724K9L" H 4750 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4750 4150 50  0001 C CNN "category"
+F 7 "0603" H 4750 4150 50  0001 C CNN "package"
+	1    4750 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 3550 3600 3550
 $Comp
-L Device:R_Small R?
+L Device:R_Small R24
 U 1 1 61CCFEB8
-P 4300 3900
-F 0 "R?" V 4104 3900 50  0000 C CNN
-F 1 "NU" V 4195 3900 50  0000 C CNN
-F 2 "" H 4300 3900 50  0001 C CNN
-F 3 "~" H 4300 3900 50  0001 C CNN
-	1    4300 3900
+P 3000 3550
+F 0 "R24" V 2804 3550 50  0000 C CNN
+F 1 "NU" V 2895 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 3550 50  0001 C CNN
+F 3 "~" H 3000 3550 50  0001 C CNN
+F 4 "Not Populated" H 3000 3550 50  0001 C CNN "Description"
+F 5 "N/A" H 3000 3550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 3000 3550 50  0001 C CNN "category"
+F 7 "0603" H 3000 3550 50  0001 C CNN "package"
+	1    3000 3550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C22
 U 1 1 61CD02F9
-P 4700 4100
-F 0 "C?" H 4792 4146 50  0000 L CNN
-F 1 "270pF" H 4792 4055 50  0000 L CNN
-F 2 "" H 4700 4100 50  0001 C CNN
-F 3 "~" H 4700 4100 50  0001 C CNN
-	1    4700 4100
+P 3400 3750
+F 0 "C22" H 3492 3796 50  0000 L CNN
+F 1 "270pF" H 3492 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3400 3750 50  0001 C CNN
+F 3 "~" H 3400 3750 50  0001 C CNN
+F 4 "100V MLCC 5%" H 3400 3750 50  0001 C CNN "Description"
+F 5 "GRM1885C2A271JA01D" H 3400 3750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 3400 3750 50  0001 C CNN "category"
+F 7 "0603" H 3400 3750 50  0001 C CNN "package"
+	1    3400 3750
 	1    0    0    -1  
 $EndComp
-Text HLabel 4700 4300 2    50   Input ~ 0
+Text HLabel 3400 3950 2    50   Input ~ 0
 GND
 Wire Wire Line
-	4700 4300 4700 4200
+	3400 3950 3400 3850
 Wire Wire Line
-	4700 4000 4700 3900
+	3400 3650 3400 3550
 Wire Wire Line
-	4700 3900 5050 3900
-Wire Wire Line
-	4700 3900 4400 3900
-Connection ~ 4700 3900
-Text Label 4000 3900 0    50   ~ 0
+	3400 3550 3100 3550
+Connection ~ 3400 3550
+Text Label 2700 3550 0    50   ~ 0
 Vcc
 Wire Wire Line
-	4000 3900 4200 3900
+	2700 3550 2900 3550
 $Comp
-L Device:R_Small R?
+L Device:R_Small R26
 U 1 1 61CD9D7E
 P 4650 3100
-F 0 "R?" V 4454 3100 50  0000 C CNN
+F 0 "R26" V 4454 3100 50  0000 C CNN
 F 1 "54.9k" V 4545 3100 50  0000 C CNN
-F 2 "" H 4650 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4650 3100 50  0001 C CNN
 F 3 "~" H 4650 3100 50  0001 C CNN
+F 4 "125mW Resistor 1%" H 4650 3100 50  0001 C CNN "Description"
+F 5 "CR0805-FX-5492ELF" H 4650 3100 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4650 3100 50  0001 C CNN "category"
+F 7 "0805" H 4650 3100 50  0001 C CNN "package"
 	1    4650 3100
 	0    1    1    0   
 $EndComp
@@ -503,13 +575,17 @@ Wire Wire Line
 Wire Wire Line
 	4450 3100 4550 3100
 $Comp
-L Device:R_Small R?
+L Device:R_Small R25
 U 1 1 61CE3826
 P 4200 3100
-F 0 "R?" V 4004 3100 50  0000 C CNN
-F 1 "16.2k" V 4095 3100 50  0000 C CNN
-F 2 "" H 4200 3100 50  0001 C CNN
+F 0 "R25" V 4004 3100 50  0000 C CNN
+F 1 "2.36k" V 4095 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 3100 50  0001 C CNN
 F 3 "~" H 4200 3100 50  0001 C CNN
+F 4 "100mW Resistor 1%" H 4200 3100 50  0001 C CNN "Description"
+F 5 "ERJ-S03F2371V" H 4200 3100 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4200 3100 50  0001 C CNN "category"
+F 7 "0603" H 4200 3100 50  0001 C CNN "package"
 	1    4200 3100
 	0    1    1    0   
 $EndComp
@@ -519,13 +595,17 @@ Connection ~ 4450 3100
 Wire Wire Line
 	4450 3100 4450 2750
 $Comp
-L Device:C_Small C?
+L Device:C_Small C25
 U 1 1 61CE7B95
 P 4200 2750
-F 0 "C?" V 3971 2750 50  0000 C CNN
+F 0 "C25" V 3971 2750 50  0000 C CNN
 F 1 "NU" V 4062 2750 50  0000 C CNN
-F 2 "" H 4200 2750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 2750 50  0001 C CNN
 F 3 "~" H 4200 2750 50  0001 C CNN
+F 4 "0603 UNPOPULATED" H 4200 2750 50  0001 C CNN "Description"
+F 5 "N/A" H 4200 2750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 4200 2750 50  0001 C CNN "category"
+F 7 "0603" H 4200 2750 50  0001 C CNN "package"
 	1    4200 2750
 	0    1    1    0   
 $EndComp
@@ -543,26 +623,33 @@ Wire Wire Line
 Text HLabel 3900 3200 0    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C?
+L Device:C_Small C28
 U 1 1 61CF0B65
 P 5400 2250
-F 0 "C?" V 5171 2250 50  0000 C CNN
+F 0 "C28" V 5171 2250 50  0000 C CNN
 F 1 "0.1uF" V 5262 2250 50  0000 C CNN
-F 2 "" H 5400 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 2250 50  0001 C CNN
 F 3 "~" H 5400 2250 50  0001 C CNN
+F 4 "100V MLCC 10%" H 5400 2250 50  0001 C CNN "Description"
+F 5 "C2012X7R2A104K125AA" H 5400 2250 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 5400 2250 50  0001 C CNN "category"
+F 7 "0805" H 5400 2250 50  0001 C CNN "package"
 	1    5400 2250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5750 2800 6450 2800
 $Comp
-L Device:D_Small D?
+L Device:D_Small D7
 U 1 1 61CF3B58
 P 6850 2250
-F 0 "D?" H 6850 2455 50  0000 C CNN
-F 1 "D_Small" H 6850 2364 50  0000 C CNN
-F 2 "" V 6850 2250 50  0001 C CNN
+F 0 "D7" H 6850 2455 50  0000 C CNN
+F 1 "NU" H 6850 2364 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-128" V 6850 2250 50  0001 C CNN
 F 3 "~" V 6850 2250 50  0001 C CNN
+F 4 "SOD-128 UNPOPULATED" H 6850 2250 50  0001 C CNN "Description"
+F 5 "5VREG" H 6850 2250 50  0001 C CNN "category"
+F 6 "SOD-128-2" H 6850 2250 50  0001 C CNN "package"
 	1    6850 2250
 	1    0    0    -1  
 $EndComp
@@ -576,13 +663,17 @@ Connection ~ 6450 2250
 Wire Wire Line
 	6450 2250 6300 2250
 $Comp
-L Device:C_Small C?
+L Device:C_Small C29
 U 1 1 61D08B17
 P 6200 2250
-F 0 "C?" V 5971 2250 50  0000 C CNN
+F 0 "C29" V 5971 2250 50  0000 C CNN
 F 1 "1uF" V 6062 2250 50  0000 C CNN
-F 2 "" H 6200 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 2250 50  0001 C CNN
 F 3 "~" H 6200 2250 50  0001 C CNN
+F 4 "16V MLCC 10%" H 6200 2250 50  0001 C CNN "Description"
+F 5 "GCM188R71C105KA64J" H 6200 2250 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "VREG" H 6200 2250 50  0001 C CNN "category"
+F 7 "0603" H 6200 2250 50  0001 C CNN "package"
 	1    6200 2250
 	0    1    1    0   
 $EndComp
@@ -621,13 +712,17 @@ Wire Wire Line
 Wire Wire Line
 	7350 1750 5150 1750
 $Comp
-L Device:C_Small C?
+L Device:C_Small C23
 U 1 1 61D31EA0
 P 3450 1950
-F 0 "C?" H 3542 1996 50  0000 L CNN
+F 0 "C23" H 3542 1996 50  0000 L CNN
 F 1 "2.2uF" H 3542 1905 50  0000 L CNN
-F 2 "" H 3450 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3450 1950 50  0001 C CNN
 F 3 "~" H 3450 1950 50  0001 C CNN
+F 4 "100V MLCC 10%" H 3450 1950 50  0001 C CNN "Description"
+F 5 "GRM32ER72A225KA35L" H 3450 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 3450 1950 50  0001 C CNN "category"
+F 7 "1210" H 3450 1950 50  0001 C CNN "package"
 	1    3450 1950
 	1    0    0    -1  
 $EndComp
@@ -635,46 +730,62 @@ Wire Wire Line
 	5150 1750 3450 1750
 Connection ~ 5150 1750
 $Comp
-L Device:C_Small C?
+L Device:C_Small C21
 U 1 1 61D36552
 P 3050 1950
-F 0 "C?" H 3142 1996 50  0000 L CNN
+F 0 "C21" H 3142 1996 50  0000 L CNN
 F 1 "2.2uF" H 3142 1905 50  0000 L CNN
-F 2 "" H 3050 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3050 1950 50  0001 C CNN
 F 3 "~" H 3050 1950 50  0001 C CNN
+F 4 "100V MLCC 10%" H 3050 1950 50  0001 C CNN "Description"
+F 5 "GRM32ER72A225KA35L" H 3050 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 3050 1950 50  0001 C CNN "category"
+F 7 "1210" H 3050 1950 50  0001 C CNN "package"
 	1    3050 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C20
 U 1 1 61D3A3EB
 P 2700 1950
-F 0 "C?" H 2792 1996 50  0000 L CNN
+F 0 "C20" H 2792 1996 50  0000 L CNN
 F 1 "2.2uF" H 2792 1905 50  0000 L CNN
-F 2 "" H 2700 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2700 1950 50  0001 C CNN
 F 3 "~" H 2700 1950 50  0001 C CNN
+F 4 "100V MLCC 10%" H 2700 1950 50  0001 C CNN "Description"
+F 5 "GRM32ER72A225KA35L" H 2700 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 2700 1950 50  0001 C CNN "category"
+F 7 "1210" H 2700 1950 50  0001 C CNN "package"
 	1    2700 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C19
 U 1 1 61D3A3F1
 P 2300 1950
-F 0 "C?" H 2392 1996 50  0000 L CNN
+F 0 "C19" H 2392 1996 50  0000 L CNN
 F 1 "2.2uF" H 2392 1905 50  0000 L CNN
-F 2 "" H 2300 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2300 1950 50  0001 C CNN
 F 3 "~" H 2300 1950 50  0001 C CNN
+F 4 "100V MLCC 10%" H 2300 1950 50  0001 C CNN "Description"
+F 5 "GRM32ER72A225KA35L" H 2300 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 2300 1950 50  0001 C CNN "category"
+F 7 "1210" H 2300 1950 50  0001 C CNN "package"
 	1    2300 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C18
 U 1 1 61D3DCB2
 P 1900 1950
-F 0 "C?" H 1992 1996 50  0000 L CNN
+F 0 "C18" H 1992 1996 50  0000 L CNN
 F 1 "2.2uF" H 1992 1905 50  0000 L CNN
-F 2 "" H 1900 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1900 1950 50  0001 C CNN
 F 3 "~" H 1900 1950 50  0001 C CNN
+F 4 "100V MLCC 10%" H 1900 1950 50  0001 C CNN "Description"
+F 5 "GRM32ER72A225KA35L" H 1900 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 1900 1950 50  0001 C CNN "category"
+F 7 "1210" H 1900 1950 50  0001 C CNN "package"
 	1    1900 1950
 	1    0    0    -1  
 $EndComp
@@ -736,4 +847,17 @@ Wire Wire Line
 Wire Wire Line
 	7650 4100 7200 4100
 Connection ~ 7200 4100
+Text Notes 7100 4200 0    50   ~ 0
+"kelvin-connection"
+Text Notes 2200 3150 0    50   ~ 0
+populate R's only for LiPo operation ->
+Wire Wire Line
+	5050 3900 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	3400 3550 5050 3550
+Wire Wire Line
+	8650 3550 9450 3550
+Wire Wire Line
+	8650 3750 9450 3750
 $EndSCHEMATC

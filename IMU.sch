@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BMI088:BMI088 U5
+L BMI088:BMI088 U4
 U 1 1 61AAAEE7
 P 4100 3500
-F 0 "U5" H 4100 4367 50  0000 C CNN
+F 0 "U4" H 4100 4367 50  0000 C CNN
 F 1 "BMI088" H 4100 4276 50  0000 C CNN
 F 2 "BMI088:PQFN50P450X300X100-16N" H 4100 3500 50  0001 L BNN
 F 3 "" H 4100 3500 50  0001 L BNN
@@ -28,6 +28,9 @@ F 7 "None" H 4100 3500 50  0001 L BNN "PRICE"
 F 8 "In Stock" H 4100 3500 50  0001 L BNN "AVAILABILITY"
 F 9 "Bosch Sensortec" H 4100 3500 50  0001 L BNN "MF"
 F 10 "Accelerometer, Gyroscope, 6 Axis Sensor I²C, SPI Output" H 4100 3500 50  0001 L BNN "DESCRIPTION"
+F 11 "BMI088 IMU" H 4100 3500 50  0001 C CNN "Description"
+F 12 "BMI088" H 4100 3500 50  0001 C CNN "Manufacturer_Part_Number"
+F 13 "IMU" H 4100 3500 50  0001 C CNN "category"
 	1    4100 3500
 	1    0    0    -1  
 $EndComp
@@ -67,24 +70,32 @@ Connection ~ 4800 2900
 Wire Wire Line
 	4800 2900 4800 2650
 $Comp
-L Device:C_Small C17
+L Device:C_Small C13
 U 1 1 61AB1A8B
 P 1550 3650
-F 0 "C17" H 1642 3696 50  0000 L CNN
+F 0 "C13" H 1642 3696 50  0000 L CNN
 F 1 "0.1uF" H 1642 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1550 3650 50  0001 C CNN
 F 3 "~" H 1550 3650 50  0001 C CNN
+F 4 "16V MLCC 10%" H 1550 3650 50  0001 C CNN "Description"
+F 5 "C0603C104K4RACTU" H 1550 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "IMU" H 1550 3650 50  0001 C CNN "category"
+F 7 "0603" H 1550 3650 50  0001 C CNN "package"
 	1    1550 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C18
+L Device:C_Small C14
 U 1 1 61AB21C7
 P 1950 3650
-F 0 "C18" H 2042 3696 50  0000 L CNN
+F 0 "C14" H 2042 3696 50  0000 L CNN
 F 1 "10uF" H 2042 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1950 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1950 3650 50  0001 C CNN
 F 3 "~" H 1950 3650 50  0001 C CNN
+F 4 "25V MLCC 10%" H 1950 3650 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 1950 3650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "IMU" H 1950 3650 50  0001 C CNN "category"
+F 7 "0603" H 1950 3650 50  0001 C CNN "package"
 	1    1950 3650
 	1    0    0    -1  
 $EndComp
@@ -141,6 +152,9 @@ F 0 "JP7" V 5150 3648 50  0000 L CNN
 F 1 "Jumper_NO_Small" V 5195 3648 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 3600 50  0001 C CNN
 F 3 "~" H 5150 3600 50  0001 C CNN
+F 4 "Pin Header" H 5150 3600 50  0001 C CNN "Description"
+F 5 "IMU" H 5150 3600 50  0001 C CNN "category"
+F 6 "2x2.54mm" H 5150 3600 50  0001 C CNN "package"
 	1    5150 3600
 	0    1    1    0   
 $EndComp

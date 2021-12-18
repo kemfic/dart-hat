@@ -1,0 +1,78 @@
+
+(module NEXPERIA_PMEG045V150EPDZ (layer F.Cu) (tedit 61B6CC49)
+  (descr "")
+  (fp_text reference REF** (at -1.338035 -3.894955 0) (layer F.SilkS)
+    (effects (font (size 0.320968503937 0.320968503937) (thickness 0.15)))
+  )
+  (fp_text value NEXPERIA_PMEG045V150EPDZ (at 2.533092 3.9766645 0) (layer F.Fab)
+    (effects (font (size 0.320796062992 0.320796062992) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at -1.065 -2.78) (size 1.6 1.44) (layers F.Cu F.Mask))
+  (pad 2 smd rect (at 1.065 -2.78) (size 1.6 1.44) (layers F.Cu F.Mask))
+  (pad 3 smd rect (at 0.0 1.02) (size 3.8 4.96) (layers F.Cu F.Mask))
+  (fp_line (start -2.15 -2.9) (end 2.15 -2.9) (layer F.Fab) (width 0.127))
+  (fp_line (start 2.15 2.9) (end -2.15 2.9) (layer F.Fab) (width 0.127))
+  (fp_line (start -2.35 -3.58) (end 2.35 -3.58) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 2.35 -3.58) (end 2.35 3.67) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 2.35 3.67) (end -2.35 3.67) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -2.35 3.67) (end -2.35 -3.58) (layer F.CrtYd) (width 0.05))
+  (fp_circle (center -2.05 -3.33) (end -2.0 -3.33) (layer F.SilkS) (width 0.1))
+  (fp_circle (center -1.1 -2.33) (end -1.05 -2.33) (layer F.Fab) (width 0.1))
+  (fp_poly
+    (pts
+      (xy -1.765 -3.45)
+      (xy -0.365 -3.45)
+      (xy -0.365 -2.11)
+      (xy -1.765 -2.11)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy 0.365 -3.45)
+      (xy 1.765 -3.45)
+      (xy 1.765 -2.11)
+      (xy 0.365 -2.11)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy -1.2 3.45)
+      (xy 1.2 3.45)
+      (xy 1.25 3.45)
+      (xy 1.25 2.95)
+      (xy -1.2 2.95)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy -1.8 -1.35)
+      (xy -0.1 -1.35)
+      (xy -0.1 0.6)
+      (xy -1.8 0.6)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy -1.8 2.75)
+      (xy -0.1 2.75)
+      (xy -0.1 0.85)
+      (xy -1.8 0.85)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy 1.8 2.75)
+      (xy 0.1 2.75)
+      (xy 0.1 0.8)
+      (xy 1.8 0.8)
+    ) (layer F.Paste) (width 0.001)
+  )
+  (fp_poly
+    (pts
+      (xy 1.8 -1.35)
+      (xy 0.1 -1.35)
+      (xy 0.1 0.55)
+      (xy 1.8 0.55)
+    ) (layer F.Paste) (width 0.001)
+  )
+)

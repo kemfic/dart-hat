@@ -288,21 +288,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 4800 8250 4800
 Connection ~ 8250 4800
-$Comp
-L Device:CP_Small CP2
-U 1 1 61B588AD
-P 8450 5200
-F 0 "CP2" V 8675 5200 50  0000 C CNN
-F 1 "330uF" V 8584 5200 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 8450 5200 50  0001 C CNN
-F 3 "~" H 8450 5200 50  0001 C CNN
-F 4 "100V Electrolytic 20%" H 8450 5200 50  0001 C CNN "Description"
-F 5 "337CKS050M" H 8450 5200 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "SERVO" H 8450 5200 50  0001 C CNN "category"
-F 7 "16mm" H 8450 5200 50  0001 C CNN "package"
-	1    8450 5200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8250 4800 8250 5200
 Wire Wire Line
@@ -431,4 +416,20 @@ NoConn ~ 5100 4100
 NoConn ~ 5100 4200
 NoConn ~ 5100 4300
 NoConn ~ 5100 4400
+$Comp
+L Device:CP_Small CP?
+U 1 1 61B9AE87
+P 8450 5200
+AR Path="/61BC5F5B/61B9AE87" Ref="CP?"  Part="1" 
+AR Path="/61AC98FF/61B9AE87" Ref="CP2"  Part="1" 
+F 0 "CP2" H 8538 5246 50  0000 L CNN
+F 1 "470uF" H 8538 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 8450 5200 50  0001 C CNN
+F 3 "~" H 8450 5200 50  0001 C CNN
+F 4 "6.3V SMD Electrolytic 20%" H 8450 5200 50  0001 C CNN "Description"
+F 5 "APXH6R3ARA471MJ80G" H 8450 5200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "5VREG" H 8450 5200 50  0001 C CNN "category"
+	1    8450 5200
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

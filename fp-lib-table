@@ -29,4 +29,5 @@
   (lib (name SI7611DN-T1-GE3)(type KiCad)(uri ${KIPRJMOD}/lib/SI7611DN-T1-GE3)(options "")(descr ""))
   (lib (name CSD18511Q5AT)(type KiCad)(uri ${KIPRJMOD}/lib/CSD18511Q5AT.pretty)(options "")(descr ""))
   (lib (name SRP6060FA)(type KiCad)(uri ${KIPRJMOD}/lib/SRP6060FA.pretty)(options "")(descr ""))
+  (lib (name Panelization)(type KiCad)(uri ${KIPRJMOD}/lib/Panelization.pretty-master)(options "")(descr ""))
 )

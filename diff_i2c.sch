@@ -125,7 +125,7 @@ F 11 "10-MSOP" H 5450 3550 50  0001 C CNN "package"
 $EndComp
 Text HLabel 5250 3150 0    50   Input ~ 0
 VCC
-Text HLabel 4300 4400 3    50   Input ~ 0
+Text HLabel 4500 3900 3    50   Input ~ 0
 GND
 Text HLabel 5200 3650 0    50   Input ~ 0
 SDA
@@ -139,44 +139,44 @@ Wire Wire Line
 $Comp
 L Device:C_Small C12
 U 1 1 6198DB03
-P 4300 4200
-F 0 "C12" H 4392 4246 50  0000 L CNN
-F 1 "10uF" H 4392 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 4200 50  0001 C CNN
-F 3 "~" H 4300 4200 50  0001 C CNN
-F 4 "25V MLCC 10%" H 4300 4200 50  0001 C CNN "Description"
-F 5 "GRM188R61E106KA73J" H 4300 4200 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "EEPROM" H 4300 4200 50  0001 C CNN "category"
-F 7 "0603" H 4300 4200 50  0001 C CNN "package"
-	1    4300 4200
+P 4500 3700
+F 0 "C12" H 4592 3746 50  0000 L CNN
+F 1 "10uF" H 4592 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 3700 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+F 4 "25V MLCC 10%" H 4500 3700 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 4500 3700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "EEPROM" H 4500 3700 50  0001 C CNN "category"
+F 7 "0603" H 4500 3700 50  0001 C CNN "package"
+	1    4500 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 4050 4300 4100
+	4500 3550 4500 3600
 Wire Wire Line
-	4300 4300 4300 4400
+	4500 3800 4500 3900
 $Comp
 L Device:C_Small C11
 U 1 1 61991791
-P 3900 4200
-F 0 "C11" H 3992 4246 50  0000 L CNN
-F 1 "10uF" H 3992 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 4200 50  0001 C CNN
-F 3 "~" H 3900 4200 50  0001 C CNN
-F 4 "25V MLCC 10%" H 3900 4200 50  0001 C CNN "Description"
-F 5 "GRM188R61E106KA73J" H 3900 4200 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "EEPROM" H 3900 4200 50  0001 C CNN "category"
-F 7 "0603" H 3900 4200 50  0001 C CNN "package"
-	1    3900 4200
+P 4100 3700
+F 0 "C11" H 4192 3746 50  0000 L CNN
+F 1 "10uF" H 4192 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 3700 50  0001 C CNN
+F 3 "~" H 4100 3700 50  0001 C CNN
+F 4 "25V MLCC 10%" H 4100 3700 50  0001 C CNN "Description"
+F 5 "GRM188R61E106KA73J" H 4100 3700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "EEPROM" H 4100 3700 50  0001 C CNN "category"
+F 7 "0603" H 4100 3700 50  0001 C CNN "package"
+	1    4100 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 4050 3900 4100
+	4100 3550 4100 3600
 Wire Wire Line
-	3900 4050 4300 4050
+	4100 3550 4500 3550
 Wire Wire Line
-	4300 4300 3900 4300
-Connection ~ 4300 4300
+	4500 3800 4100 3800
+Connection ~ 4500 3800
 Wire Wire Line
 	6750 3950 7050 3950
 Wire Wire Line
@@ -285,11 +285,11 @@ Text HLabel 5450 4150 3    50   Input ~ 0
 GND
 Wire Wire Line
 	5450 4150 5450 3950
-Text HLabel 4300 3900 0    50   Input ~ 0
+Text HLabel 4500 3400 0    50   Input ~ 0
 VCC
 Wire Wire Line
-	4300 3900 4300 4050
-Connection ~ 4300 4050
+	4500 3400 4500 3550
+Connection ~ 4500 3550
 Wire Wire Line
 	5450 3150 6750 3150
 Wire Wire Line
@@ -327,82 +327,100 @@ Wire Wire Line
 	6750 3750 7050 3750
 Wire Wire Line
 	6750 3650 7050 3650
+Text Label 1150 6150 0    50   ~ 0
+SDA+
+Wire Wire Line
+	1150 6150 1400 6150
 $Comp
-L Connector:TestPoint TP10
-U 1 1 61B8A771
-P 7050 3650
-F 0 "TP10" V 7050 3838 50  0000 L CNN
-F 1 "TestPoint" V 7095 3838 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3650 50  0001 C CNN
-F 3 "~" H 7250 3650 50  0001 C CNN
-	1    7050 3650
+L Device:R_Small R25
+U 1 1 61E38411
+P 1500 6150
+F 0 "R25" V 1304 6150 50  0000 C CNN
+F 1 "390" V 1395 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 6150 50  0001 C CNN
+F 3 "~" H 1500 6150 50  0001 C CNN
+	1    1500 6150
 	0    1    1    0   
 $EndComp
+Text Label 1150 6450 0    50   ~ 0
+SCL+
+Wire Wire Line
+	1150 6450 1400 6450
 $Comp
-L Connector:TestPoint TP11
-U 1 1 61B8ADC9
-P 7050 3750
-F 0 "TP11" V 7050 3938 50  0000 L CNN
-F 1 "TestPoint" V 7095 3938 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3750 50  0001 C CNN
-F 3 "~" H 7250 3750 50  0001 C CNN
-	1    7050 3750
+L Device:R_Small R26
+U 1 1 61E38A1C
+P 1500 6450
+F 0 "R26" V 1304 6450 50  0000 C CNN
+F 1 "390" V 1395 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 6450 50  0001 C CNN
+F 3 "~" H 1500 6450 50  0001 C CNN
+	1    1500 6450
 	0    1    1    0   
 $EndComp
+Text Label 1150 6750 0    50   ~ 0
+SDA-
+Wire Wire Line
+	1150 6750 1400 6750
 $Comp
-L Connector:TestPoint TP12
-U 1 1 61B8C5BF
-P 7050 3850
-F 0 "TP12" V 7050 4038 50  0000 L CNN
-F 1 "TestPoint" V 7095 4038 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3850 50  0001 C CNN
-F 3 "~" H 7250 3850 50  0001 C CNN
-	1    7050 3850
+L Device:R_Small R34
+U 1 1 61E3A364
+P 1500 6750
+F 0 "R34" V 1304 6750 50  0000 C CNN
+F 1 "390" V 1395 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 6750 50  0001 C CNN
+F 3 "~" H 1500 6750 50  0001 C CNN
+	1    1500 6750
 	0    1    1    0   
 $EndComp
+Text Label 1150 7050 0    50   ~ 0
+SCL-
+Wire Wire Line
+	1150 7050 1400 7050
 $Comp
-L Connector:TestPoint TP13
-U 1 1 61B8C5C5
-P 7050 3950
-F 0 "TP13" V 7050 4138 50  0000 L CNN
-F 1 "TestPoint" V 7095 4138 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3950 50  0001 C CNN
-F 3 "~" H 7250 3950 50  0001 C CNN
-	1    7050 3950
+L Device:R_Small R35
+U 1 1 61E3A36C
+P 1500 7050
+F 0 "R35" V 1304 7050 50  0000 C CNN
+F 1 "390" V 1395 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 7050 50  0001 C CNN
+F 3 "~" H 1500 7050 50  0001 C CNN
+	1    1500 7050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 2100 3050 2100
+	1600 6450 1850 6450
 Wire Wire Line
-	1500 2300 3050 2300
-$Comp
-L Connector:TestPoint TP9
-U 1 1 61B915B9
-P 3050 2400
-F 0 "TP9" H 2992 2426 50  0000 R CNN
-F 1 "TestPoint" H 2992 2517 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3250 2400 50  0001 C CNN
-F 3 "~" H 3250 2400 50  0001 C CNN
-	1    3050 2400
-	-1   0    0    1   
-$EndComp
+	1850 6450 1850 6150
 Wire Wire Line
-	3050 2400 3050 2300
-Connection ~ 3050 2300
+	1600 6150 1850 6150
+Connection ~ 1850 6150
 Wire Wire Line
-	3050 2300 3250 2300
-$Comp
-L Connector:TestPoint TP8
-U 1 1 61B932FB
-P 3050 2100
-F 0 "TP8" H 3108 2172 50  0000 L CNN
-F 1 "TestPoint" H 3108 2127 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3250 2100 50  0001 C CNN
-F 3 "~" H 3250 2100 50  0001 C CNN
-	1    3050 2100
-	1    0    0    -1  
-$EndComp
-Connection ~ 3050 2100
+	1850 6150 1850 6050
+Text HLabel 1850 6050 1    50   Input ~ 0
+VCC
 Wire Wire Line
-	3050 2100 3250 2100
+	1600 6750 1850 6750
+Wire Wire Line
+	1850 6750 1850 7050
+Wire Wire Line
+	1600 7050 1850 7050
+Connection ~ 1850 7050
+Wire Wire Line
+	1850 7050 1850 7200
+Text HLabel 1850 7200 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1500 2300 3250 2300
+Wire Wire Line
+	1500 2100 3250 2100
+Text Notes 950  5700 0    50   ~ 0
+di2c biasing\n
+Wire Notes Line
+	2550 5750 2550 7250
+Wire Notes Line
+	950  5750 2550 5750
+Wire Notes Line
+	950  5750 950  7250
+Wire Notes Line
+	950  7250 2550 7250
 $EndSCHEMATC

@@ -534,77 +534,8 @@ Text Label 2700 3550 0    50   ~ 0
 Vcc
 Wire Wire Line
 	2700 3550 2900 3550
-$Comp
-L Device:R_Small R26
-U 1 1 61CD9D7E
-P 4650 3100
-F 0 "R26" V 4454 3100 50  0000 C CNN
-F 1 "54.9k" V 4545 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4650 3100 50  0001 C CNN
-F 3 "~" H 4650 3100 50  0001 C CNN
-F 4 "125mW Resistor 1%" H 4650 3100 50  0001 C CNN "Description"
-F 5 "CR0805-FX-5492ELF" H 4650 3100 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "5VREG" H 4650 3100 50  0001 C CNN "category"
-F 7 "0805" H 4650 3100 50  0001 C CNN "package"
-	1    4650 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5050 3200 4450 3200
 Wire Wire Line
 	5050 3100 4950 3100
-Wire Wire Line
-	4450 3200 4450 3100
-Wire Wire Line
-	4450 3100 4550 3100
-$Comp
-L Device:R_Small R25
-U 1 1 61CE3826
-P 4200 3100
-F 0 "R25" V 4004 3100 50  0000 C CNN
-F 1 "2.36k" V 4095 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 3100 50  0001 C CNN
-F 3 "~" H 4200 3100 50  0001 C CNN
-F 4 "100mW Resistor 1%" H 4200 3100 50  0001 C CNN "Description"
-F 5 "ERJ-S03F2371V" H 4200 3100 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "5VREG" H 4200 3100 50  0001 C CNN "category"
-F 7 "0603" H 4200 3100 50  0001 C CNN "package"
-	1    4200 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 3100 4450 3100
-Connection ~ 4450 3100
-Wire Wire Line
-	4450 3100 4450 2750
-$Comp
-L Device:C_Small C25
-U 1 1 61CE7B95
-P 4200 2750
-F 0 "C25" V 3971 2750 50  0000 C CNN
-F 1 "NU" V 4062 2750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 2750 50  0001 C CNN
-F 3 "~" H 4200 2750 50  0001 C CNN
-F 4 "0603 UNPOPULATED" H 4200 2750 50  0001 C CNN "Description"
-F 5 "N/A" H 4200 2750 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "5VREG" H 4200 2750 50  0001 C CNN "category"
-F 7 "0603" H 4200 2750 50  0001 C CNN "package"
-	1    4200 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 2750 4450 2750
-Wire Wire Line
-	4100 2750 3900 2750
-Wire Wire Line
-	3900 2750 3900 3100
-Wire Wire Line
-	4100 3100 3900 3100
-Connection ~ 3900 3100
-Wire Wire Line
-	3900 3100 3900 3200
-Text HLabel 3900 3200 0    50   Input ~ 0
-GND
 $Comp
 L Device:C_Small C28
 U 1 1 61CF0B65
@@ -682,9 +613,6 @@ Wire Wire Line
 	5300 2250 5150 2250
 Wire Wire Line
 	4950 2250 4950 3100
-Connection ~ 4950 3100
-Wire Wire Line
-	4950 3100 4750 3100
 Wire Wire Line
 	5150 2250 5150 1750
 Connection ~ 5150 2250
@@ -832,8 +760,6 @@ Wire Wire Line
 Connection ~ 7200 4100
 Text Notes 7100 4200 0    50   ~ 0
 "kelvin-connection"
-Text Notes 2200 3150 0    50   ~ 0
-populate R's only for LiPo operation ->
 Wire Wire Line
 	5050 3900 4750 3900
 Connection ~ 4750 3900
@@ -856,4 +782,5 @@ F 3 "~" H 7250 3100 50  0001 C CNN
 	1    7250 3100
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5050 3200
 $EndSCHEMATC

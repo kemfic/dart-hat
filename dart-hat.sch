@@ -145,10 +145,8 @@ Text Label 11100 4050 2    50   ~ 0
 CS_CAN
 Text Label 11100 3750 2    50   ~ 0
 MOSI_CAN
-Text Label 11100 3900 2    50   ~ 0
+Text Label 11100 3600 2    50   ~ 0
 SCLK_CAN
-Wire Wire Line
-	9100 3850 9100 3750
 Wire Wire Line
 	9550 4050 9300 4050
 Wire Wire Line
@@ -395,14 +393,14 @@ Wire Wire Line
 	5850 4200 6350 4200
 Wire Wire Line
 	5850 3800 6350 3800
-Text Label 11100 3600 2    50   ~ 0
+Text Label 11100 3900 2    50   ~ 0
 MISO_CAN
 Wire Wire Line
-	10650 3600 11100 3600
+	10650 3900 11100 3900
 Wire Wire Line
 	10650 3750 11100 3750
 Wire Wire Line
-	10650 3900 11100 3900
+	10650 3600 11100 3600
 Wire Wire Line
 	10650 4050 11100 4050
 Text Label 11150 900  2    50   ~ 0
@@ -1088,17 +1086,6 @@ Wire Wire Line
 Text Label 5850 4700 0    50   ~ 0
 CAN_INT
 $Comp
-L power:+3V3 #PWR023
-U 1 1 61CB860A
-P 9100 3750
-F 0 "#PWR023" H 9100 3600 50  0001 C CNN
-F 1 "+3V3" H 9115 3923 50  0000 C CNN
-F 2 "" H 9100 3750 50  0001 C CNN
-F 3 "" H 9100 3750 50  0001 C CNN
-	1    9100 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR027
 U 1 1 61CE4F5D
 P 9350 5250
@@ -1393,4 +1380,17 @@ F 6 "Manufacturer recommendations" H 2100 2900 50  0001 L BNN "STANDARD"
 $EndComp
 Wire Wire Line
 	2200 3000 2200 3100
+Wire Wire Line
+	9100 3850 9100 3750
+$Comp
+L power:+3V3 #PWR023
+U 1 1 61CB860A
+P 9100 3750
+F 0 "#PWR023" H 9100 3600 50  0001 C CNN
+F 1 "+3V3" H 9115 3923 50  0000 C CNN
+F 2 "" H 9100 3750 50  0001 C CNN
+F 3 "" H 9100 3750 50  0001 C CNN
+	1    9100 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
